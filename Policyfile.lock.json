@@ -1,0 +1,73 @@
+{
+  "revision_id": "9ea867d13797c550bb214348de1d445e73007955210e247376455e1bf05bf297",
+  "name": "mongod-replica-config",
+  "run_list": [
+    "recipe[mongod-replica-config::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "apt": {
+      "version": "7.2.0",
+      "identifier": "42f46ee8ced265bcc92c3bf40c9f7ceb3c443df1",
+      "dotted_decimal_identifier": "18846105652351589.53138487443197087.137349770264049",
+      "cache_key": "apt-7.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/7.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/7.2.0/download",
+        "version": "7.2.0"
+      }
+    },
+    "mongod-replica-config": {
+      "version": "0.1.0",
+      "identifier": "e4679258bd2082339ff7ff534cb40739ed9a1ad4",
+      "dotted_decimal_identifier": "64290172941705346.14531111301631156.7945380829908",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "git@github.com:josephpontin/devops-final-db-base-ami.git",
+        "revision": "a9c87a2ff03f6edb63a24eeb330deb034bcf3fbe",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/master",
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "apt",
+        "= 7.2.0"
+      ],
+      [
+        "mongod-replica-config",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "apt (7.2.0)": [
+
+      ],
+      "mongod-replica-config (0.1.0)": [
+        [
+          "apt",
+          ">= 0.0.0"
+        ]
+      ]
+    }
+  }
+}

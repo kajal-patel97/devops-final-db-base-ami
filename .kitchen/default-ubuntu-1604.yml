@@ -1,0 +1,7 @@
+---
+username: ubuntu
+auto_security_group_id: sg-07b03c76b5f838be2
+server_id: i-0ede8fe9d18972c54
+hostname: ec2-34-255-87-53.eu-west-1.compute.amazonaws.com
+last_action: create
+last_error: Kitchen::ActionFailed

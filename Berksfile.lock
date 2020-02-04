@@ -1,0 +1,14 @@
+DEPENDENCIES
+  filebeat
+    git: https://github.com/kajal-patel97/filebeat-cookbook
+    revision: 4fdb0277ce9d043d5b83a96de6a833df997e1074
+  mongod-replica-config
+    path: .
+    metadata: true
+
+GRAPH
+  apt (7.2.0)
+  filebeat (0.1.0)
+    apt (>= 0.0.0)
+  mongod-replica-config (0.1.0)
+    apt (>= 0.0.0)
