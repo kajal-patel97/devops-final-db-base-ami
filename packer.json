@@ -5,8 +5,6 @@
   },
   "builders": [{
 
-hello
-
     "ami_name": "jenkins-test-mongo-fb-ami-{{timestamp}}",
 
     "type": "amazon-ebs",
