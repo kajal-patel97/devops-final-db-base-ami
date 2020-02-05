@@ -7,11 +7,11 @@ driver:
   # deploy to devops-student subnet
   subnet_id: subnet-0e9b6138ff1ce18f2
   associate_public_ip: true
-  aws_ssh_key_id: Eng-48-common-key
+  aws_ssh_key_id: daniel-eng-48-first-key
 
 
 transport:
-  ssh_key: ~/.ssh/Eng-48-common-key.pem
+  ssh_key: ~/.ssh/daniel-eng-48-first-key.pem
 
 ## The forwarded_port port feature lets you connect to ports on the VM guest via
 ## localhost on the host.
@@ -41,4 +41,3 @@ suites:
       inspec_tests:
         - test/integration/default
     attributes:
-      

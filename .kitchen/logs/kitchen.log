@@ -1,71 +1,10 @@
-I, [2020-02-04T21:49:17.996997 #2180]  INFO -- Kitchen: -----> Starting Test Kitchen (v2.3.4)
-I, [2020-02-04T21:49:22.253868 #2180]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1804>...
-E, [2020-02-04T21:49:24.112143 #2180] ERROR -- Kitchen: ------Exception-------
-E, [2020-02-04T21:49:24.112320 #2180] ERROR -- Kitchen: Class: Kitchen::ActionFailed
-E, [2020-02-04T21:49:24.112391 #2180] ERROR -- Kitchen: Message: 1 actions failed.
->>>>>>     Verify failed on instance <default-ubuntu-1804>.  Please see .kitchen/logs/default-ubuntu-1804.log for more details
-E, [2020-02-04T21:49:24.112431 #2180] ERROR -- Kitchen: ----------------------
-E, [2020-02-04T21:49:24.112494 #2180] ERROR -- Kitchen: ------Backtrace-------
-E, [2020-02-04T21:49:24.112531 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:184:in `report_errors'
-E, [2020-02-04T21:49:24.112568 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:175:in `run_action'
-E, [2020-02-04T21:49:24.112605 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command/action.rb:36:in `block in call'
-E, [2020-02-04T21:49:24.112641 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
-E, [2020-02-04T21:49:24.112678 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command/action.rb:34:in `call'
-E, [2020-02-04T21:49:24.112739 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/cli.rb:52:in `perform'
-E, [2020-02-04T21:49:24.112788 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/cli.rb:198:in `block (2 levels) in <class:CLI>'
-E, [2020-02-04T21:49:24.112837 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
-E, [2020-02-04T21:49:24.112899 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
-E, [2020-02-04T21:49:24.112960 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
-E, [2020-02-04T21:49:24.113009 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/thor-0.20.3/lib/thor/base.rb:466:in `start'
-E, [2020-02-04T21:49:24.113106 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/bin/kitchen:13:in `block in <top (required)>'
-E, [2020-02-04T21:49:24.113162 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/errors.rb:171:in `with_friendly_errors'
-E, [2020-02-04T21:49:24.113201 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/bin/kitchen:13:in `<top (required)>'
-E, [2020-02-04T21:49:24.113239 #2180] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:369:in `load'
-E, [2020-02-04T21:49:24.113276 #2180] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:369:in `<main>'
-E, [2020-02-04T21:49:24.113337 #2180] ERROR -- Kitchen: ----End Backtrace-----
-E, [2020-02-04T21:49:24.113373 #2180] ERROR -- Kitchen: -Composite Exception--
-E, [2020-02-04T21:49:24.113409 #2180] ERROR -- Kitchen: Class: Kitchen::InstanceFailure
-E, [2020-02-04T21:49:24.113444 #2180] ERROR -- Kitchen: Message: Verify failed on instance <default-ubuntu-1804>.  Please see .kitchen/logs/default-ubuntu-1804.log for more details
-E, [2020-02-04T21:49:24.113480 #2180] ERROR -- Kitchen: ----------------------
-E, [2020-02-04T21:49:24.113516 #2180] ERROR -- Kitchen: ------Backtrace-------
-E, [2020-02-04T21:49:24.113552 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/kitchen-inspec-1.3.1/lib/kitchen/verifier/inspec.rb:98:in `call'
-E, [2020-02-04T21:49:24.113588 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:459:in `block in verify_action'
-E, [2020-02-04T21:49:24.113654 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:552:in `synchronize_or_call'
-E, [2020-02-04T21:49:24.113694 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:514:in `block in action'
-E, [2020-02-04T21:49:24.113731 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
-E, [2020-02-04T21:49:24.113767 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:513:in `action'
-E, [2020-02-04T21:49:24.113804 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:451:in `verify_action'
-E, [2020-02-04T21:49:24.113840 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
-E, [2020-02-04T21:49:24.113876 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
-E, [2020-02-04T21:49:24.113912 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:381:in `block in transition_to'
-E, [2020-02-04T21:49:24.113948 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:380:in `each'
-E, [2020-02-04T21:49:24.113985 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:380:in `transition_to'
-E, [2020-02-04T21:49:24.114021 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:162:in `verify'
-E, [2020-02-04T21:49:24.114057 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:198:in `public_send'
-E, [2020-02-04T21:49:24.114094 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:198:in `run_action_in_thread'
-E, [2020-02-04T21:49:24.114131 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
-E, [2020-02-04T21:49:24.114167 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
-E, [2020-02-04T21:49:24.114204 #2180] ERROR -- Kitchen: ----End Backtrace-----
-E, [2020-02-04T21:49:24.114241 #2180] ERROR -- Kitchen: ---Nested Exception---
-E, [2020-02-04T21:49:24.114277 #2180] ERROR -- Kitchen: Class: Kitchen::ActionFailed
-E, [2020-02-04T21:49:24.114313 #2180] ERROR -- Kitchen: Message: InSpec Runner returns 1
-E, [2020-02-04T21:49:24.114361 #2180] ERROR -- Kitchen: ----------------------
-E, [2020-02-04T21:49:24.114395 #2180] ERROR -- Kitchen: ------Backtrace-------
-E, [2020-02-04T21:49:24.114430 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/kitchen-inspec-1.3.1/lib/kitchen/verifier/inspec.rb:98:in `call'
-E, [2020-02-04T21:49:24.114464 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:459:in `block in verify_action'
-E, [2020-02-04T21:49:24.114499 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:552:in `synchronize_or_call'
-E, [2020-02-04T21:49:24.114534 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:514:in `block in action'
-E, [2020-02-04T21:49:24.114568 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
-E, [2020-02-04T21:49:24.114603 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:513:in `action'
-E, [2020-02-04T21:49:24.114712 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:451:in `verify_action'
-E, [2020-02-04T21:49:24.114783 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
-E, [2020-02-04T21:49:24.114887 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
-E, [2020-02-04T21:49:24.115004 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:381:in `block in transition_to'
-E, [2020-02-04T21:49:24.115105 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:380:in `each'
-E, [2020-02-04T21:49:24.115234 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:380:in `transition_to'
-E, [2020-02-04T21:49:24.115317 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:162:in `verify'
-E, [2020-02-04T21:49:24.115400 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:198:in `public_send'
-E, [2020-02-04T21:49:24.115483 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:198:in `run_action_in_thread'
-E, [2020-02-04T21:49:24.115567 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
-E, [2020-02-04T21:49:24.115655 #2180] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
-E, [2020-02-04T21:49:24.115738 #2180] ERROR -- Kitchen: ----End Backtrace-----
+I, [2020-02-05T07:27:17.604414 #18092]  INFO -- Kitchen: -----> Starting Test Kitchen (v2.3.4)
+I, [2020-02-05T07:27:28.566147 #18092]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1804>
+I, [2020-02-05T07:27:28.567781 #18092]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1804>...
+I, [2020-02-05T07:27:39.985603 #18092]  INFO -- Kitchen: -----> Testing <default-ubuntu-1804>
+I, [2020-02-05T07:27:39.986261 #18092]  INFO -- Kitchen: -----> Creating <default-ubuntu-1804>...
+I, [2020-02-05T07:28:50.885428 #18092]  INFO -- Kitchen: -----> Converging <default-ubuntu-1804>...
+I, [2020-02-05T07:31:44.111713 #18092]  INFO -- Kitchen: -----> Setting up <default-ubuntu-1804>...
+I, [2020-02-05T07:31:44.114818 #18092]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1804>...
+I, [2020-02-05T07:31:47.469221 #18092]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1804>...
+I, [2020-02-05T07:31:58.172608 #18092]  INFO -- Kitchen: -----> Test Kitchen is finished. (4m40.57s)

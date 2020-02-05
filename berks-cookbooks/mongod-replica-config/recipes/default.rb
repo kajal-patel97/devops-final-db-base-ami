@@ -3,8 +3,16 @@
 # Recipe:: default
 #
 # Copyright:: 2020, The Authors, All Rights Reserved.
+#
+# site_name = node['github']['repo']
+#
+# include_recipe site_name
+
 include_recipe 'apt'
 
+
+
+# THIS CODE WORKS FOR MONGOD VERSION 3.2.20
 bash 'install_mongod' do
   user 'root'
   code <<-EOH
@@ -19,12 +27,12 @@ end
 
 execute 'restart_mongod' do
   command 'sudo systemctl restart mongod'
-  action :nothing
+  action :run
 end
 
 execute 'restart_mongod.service' do
   command 'sudo systemctl enable mongod.service'
-  action :nothing
+  action :run
 end
 
 template '/etc/mongod.conf' do
@@ -61,6 +69,13 @@ bash 'chown keyfile' do
 end
 
 
-site_name = node['github']['repo']
+execute 'restart_mongod.service' do
+  command 'sudo systemctl enable mongod.service'
+  action :run
+end
 
-include_recipe site_name
+
+execute 'restart_mongod' do
+  command 'sudo systemctl restart mongod'
+  action :run
+end

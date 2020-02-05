@@ -19,6 +19,8 @@ chef_version '>= 14.0'
 #
 # source_url 'https://github.com/<insert_org_here>/mongodb_cookbook_final'
 source_url 'https://github.com/kajal-patel97/filebeat-cookbook'
-# depends 'filebeat-cookbook'
+#cookbook 'filebeat', git: 'https://github.com/kajal-patel97/filebeat-cookbook'
+
+#depends 'filebeat'
 depends 'apt'
 # depends 'debian'

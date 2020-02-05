@@ -1,5 +1,5 @@
 {
-  "revision_id": "9ea867d13797c550bb214348de1d445e73007955210e247376455e1bf05bf297",
+  "revision_id": "fca558696e008ac4db80b934f947e8ab12c8b9973b5bce15fe5a41b6f7ce66b5",
   "name": "mongod-replica-config",
   "run_list": [
     "recipe[mongod-replica-config::default]"
@@ -21,18 +21,17 @@
     },
     "mongod-replica-config": {
       "version": "0.1.0",
-      "identifier": "e4679258bd2082339ff7ff534cb40739ed9a1ad4",
-      "dotted_decimal_identifier": "64290172941705346.14531111301631156.7945380829908",
+      "identifier": "f5ebd0d23797c7d8e7eede505194b2a3b6a5c573",
+      "dotted_decimal_identifier": "69220651406694343.61053608087540116.196416213730675",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": "git@github.com:josephpontin/devops-final-db-base-ami.git",
-        "revision": "a9c87a2ff03f6edb63a24eeb330deb034bcf3fbe",
+        "remote": null,
+        "revision": "763dfc5cc392b18478068a8cdcc42f8b36000193",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
-          "origin/HEAD -> origin/master",
           "origin/master"
         ]
       },

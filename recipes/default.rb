@@ -3,20 +3,13 @@
 # Recipe:: default
 #
 # Copyright:: 2020, The Authors, All Rights Reserved.
+#
+# site_name = node['github']['repo']
+#
+# include_recipe site_name
+
 include_recipe 'apt'
 
-# bash 'install_mongodb.org' do
-#   user 'root'
-#   code <<-EOH
-#   sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-#   echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
-#   sudo apt update
-#   sudo apt install -y mongodb-org
-#   sudo systemctl stop mongod.service
-#   sudo systemctl start mongod.service
-#   sudo systemctl enable mongod.service
-#   EOH
-# end
 
 
 # THIS CODE WORKS FOR MONGOD VERSION 3.2.20
@@ -53,18 +46,18 @@ template '/lib/systemd/system/mongod.service' do
   notifies :run, 'execute[restart_mongod.service]', :immediately
 end
 
-template '/opt/mongo/mongo-keyfile' do
-  source 'mongo-keyfile.erb'
-  mode '0400'
-  notifies :run, 'execute[restart_mongod.service]', :immediately
-end
-
 directory '/opt/mongo' do
   recursive true
   owner 'root'
   group 'root'
   mode '0755'
   action :create
+end
+
+template '/opt/mongo/mongo-keyfile' do
+  source 'mongo-keyfile.erb'
+  mode '0400'
+  notifies :run, 'execute[restart_mongod.service]', :immediately
 end
 
 
@@ -76,6 +69,13 @@ bash 'chown keyfile' do
 end
 
 
-site_name = node['github']['repo']
+execute 'restart_mongod.service' do
+  command 'sudo systemctl enable mongod.service'
+  action :run
+end
 
-include_recipe site_name
+
+execute 'restart_mongod' do
+  command 'sudo systemctl restart mongod'
+  action :run
+end
