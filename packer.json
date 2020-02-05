@@ -5,6 +5,7 @@
   },
   "builders": [{
 
+    hello
 
     "ami_name": "jenkins-test-mongo-fb-ami-{{timestamp}}",
 
