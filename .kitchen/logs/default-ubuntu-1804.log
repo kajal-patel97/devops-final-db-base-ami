@@ -1,339 +1,338 @@
-I, [2020-02-05T07:27:28.566422 #18092]  INFO -- default-ubuntu-1804: -----> Cleaning up any prior instances of <default-ubuntu-1804>
-I, [2020-02-05T07:27:28.568002 #18092]  INFO -- default-ubuntu-1804: -----> Destroying <default-ubuntu-1804>...
-I, [2020-02-05T07:27:37.816485 #18092]  INFO -- default-ubuntu-1804: ==> default: Forcing shutdown of VM...
-I, [2020-02-05T07:27:39.439736 #18092]  INFO -- default-ubuntu-1804: ==> default: Destroying VM and associated drives...
-I, [2020-02-05T07:27:39.910135 #18092]  INFO -- default-ubuntu-1804: ==> default: [vagrant-hostsupdater] Removing hosts
-I, [2020-02-05T07:27:39.982375 #18092]  INFO -- default-ubuntu-1804: Vagrant instance <default-ubuntu-1804> destroyed.
-I, [2020-02-05T07:27:39.984587 #18092]  INFO -- default-ubuntu-1804: Finished destroying <default-ubuntu-1804> (0m11.41s).
-I, [2020-02-05T07:27:39.985836 #18092]  INFO -- default-ubuntu-1804: -----> Testing <default-ubuntu-1804>
-I, [2020-02-05T07:27:39.986475 #18092]  INFO -- default-ubuntu-1804: -----> Creating <default-ubuntu-1804>...
-I, [2020-02-05T07:27:43.594947 #18092]  INFO -- default-ubuntu-1804: Bringing machine 'default' up with 'virtualbox' provider...
-I, [2020-02-05T07:27:45.748002 #18092]  INFO -- default-ubuntu-1804: ==> default: Importing base box 'bento/ubuntu-18.04'...
-I, [2020-02-05T07:28:02.368120 #18092]  INFO -- default-ubuntu-1804: [KProgress: 10%[KProgress: 20%[KProgress: 40%[KProgress: 50%[K==> default: Matching MAC address for NAT networking...
-I, [2020-02-05T07:28:02.722704 #18092]  INFO -- default-ubuntu-1804: ==> default: Checking if box 'bento/ubuntu-18.04' version '201912.14.0' is up to date...
-I, [2020-02-05T07:28:03.623711 #18092]  INFO -- default-ubuntu-1804: ==> default: Setting the name of the VM: kitchen-devops-final-db-base-ami-default-ubuntu-1804-5df90f3b-d98f-49b2-900e-5340fc1315f3
-I, [2020-02-05T07:28:06.621277 #18092]  INFO -- default-ubuntu-1804: ==> default: Clearing any previously set network interfaces...
-I, [2020-02-05T07:28:06.706920 #18092]  INFO -- default-ubuntu-1804: ==> default: Preparing network interfaces based on configuration...
-I, [2020-02-05T07:28:06.707175 #18092]  INFO -- default-ubuntu-1804:     default: Adapter 1: nat
-I, [2020-02-05T07:28:06.782990 #18092]  INFO -- default-ubuntu-1804: ==> default: Forwarding ports...
-I, [2020-02-05T07:28:06.868857 #18092]  INFO -- default-ubuntu-1804:     default: 22 (guest) => 2222 (host) (adapter 1)
-I, [2020-02-05T07:28:07.105170 #18092]  INFO -- default-ubuntu-1804: ==> default: Running 'pre-boot' VM customizations...
-I, [2020-02-05T07:28:07.191087 #18092]  INFO -- default-ubuntu-1804: ==> default: Booting VM...
-I, [2020-02-05T07:28:12.537214 #18092]  INFO -- default-ubuntu-1804: ==> default: Waiting for machine to boot. This may take a few minutes...
-I, [2020-02-05T07:28:13.256198 #18092]  INFO -- default-ubuntu-1804:     default: SSH address: 127.0.0.1:2222
-I, [2020-02-05T07:28:13.256404 #18092]  INFO -- default-ubuntu-1804:     default: SSH username: vagrant
-I, [2020-02-05T07:28:13.256635 #18092]  INFO -- default-ubuntu-1804:     default: SSH auth method: private key
-I, [2020-02-05T07:28:28.708265 #18092]  INFO -- default-ubuntu-1804:     default: Warning: Connection aborted. Retrying...
-I, [2020-02-05T07:28:32.969146 #18092]  INFO -- default-ubuntu-1804:     default: 
-I, [2020-02-05T07:28:32.969420 #18092]  INFO -- default-ubuntu-1804:     default: Vagrant insecure key detected. Vagrant will automatically replace
-I, [2020-02-05T07:28:32.969634 #18092]  INFO -- default-ubuntu-1804:     default: this with a newly generated keypair for better security.
-I, [2020-02-05T07:28:35.513864 #18092]  INFO -- default-ubuntu-1804:     default: 
-I, [2020-02-05T07:28:35.514120 #18092]  INFO -- default-ubuntu-1804:     default: Inserting generated public key within guest...
-I, [2020-02-05T07:28:36.811287 #18092]  INFO -- default-ubuntu-1804:     default: Removing insecure key from the guest if it's present...
-I, [2020-02-05T07:28:37.335270 #18092]  INFO -- default-ubuntu-1804:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
-I, [2020-02-05T07:28:39.584192 #18092]  INFO -- default-ubuntu-1804: ==> default: Machine booted and ready!
-I, [2020-02-05T07:28:39.584387 #18092]  INFO -- default-ubuntu-1804: ==> default: Checking for guest additions in VM...
-I, [2020-02-05T07:28:39.681167 #18092]  INFO -- default-ubuntu-1804:     default: The guest additions on this VM do not match the installed version of
-I, [2020-02-05T07:28:39.681419 #18092]  INFO -- default-ubuntu-1804:     default: VirtualBox! In most cases this is fine, but in rare cases it can
-I, [2020-02-05T07:28:39.681673 #18092]  INFO -- default-ubuntu-1804:     default: prevent things such as shared folders from working properly. If you see
-I, [2020-02-05T07:28:39.681933 #18092]  INFO -- default-ubuntu-1804:     default: shared folder errors, please make sure the guest additions within the
-I, [2020-02-05T07:28:39.682183 #18092]  INFO -- default-ubuntu-1804:     default: virtual machine match the version of VirtualBox you have installed on
-I, [2020-02-05T07:28:39.682418 #18092]  INFO -- default-ubuntu-1804:     default: your host and reload your VM.
-I, [2020-02-05T07:28:39.682646 #18092]  INFO -- default-ubuntu-1804:     default: 
-I, [2020-02-05T07:28:39.682865 #18092]  INFO -- default-ubuntu-1804:     default: Guest Additions Version: 6.1.0
-I, [2020-02-05T07:28:39.683100 #18092]  INFO -- default-ubuntu-1804:     default: VirtualBox Version: 6.0
-I, [2020-02-05T07:28:39.683330 #18092]  INFO -- default-ubuntu-1804: ==> default: [vagrant-hostsupdater] Checking for host entries
-I, [2020-02-05T07:28:39.683563 #18092]  INFO -- default-ubuntu-1804: ==> default: Setting hostname...
-I, [2020-02-05T07:28:41.101615 #18092]  INFO -- default-ubuntu-1804: ==> default: Mounting shared folders...
-I, [2020-02-05T07:28:41.101874 #18092]  INFO -- default-ubuntu-1804:     default: /tmp/omnibus/cache => C:/Users/Kajal Patel/.kitchen/cache
-I, [2020-02-05T07:28:42.345253 #18092]  INFO -- default-ubuntu-1804: ==> default: Machine not provisioned because `--no-provision` is specified.
-I, [2020-02-05T07:28:50.882058 #18092]  INFO -- default-ubuntu-1804: [SSH] Established
-I, [2020-02-05T07:28:50.883012 #18092]  INFO -- default-ubuntu-1804: Vagrant instance <default-ubuntu-1804> created.
-I, [2020-02-05T07:28:50.885127 #18092]  INFO -- default-ubuntu-1804: Finished creating <default-ubuntu-1804> (1m10.90s).
-I, [2020-02-05T07:28:50.885639 #18092]  INFO -- default-ubuntu-1804: -----> Converging <default-ubuntu-1804>...
-I, [2020-02-05T07:28:50.939989 #18092]  INFO -- default-ubuntu-1804: Preparing files for transfer
-I, [2020-02-05T07:28:50.941083 #18092]  INFO -- default-ubuntu-1804: Installing cookbooks for Policyfile C:/opscode/cookbooks/Final_Project/devops-final-db-base-ami/Policyfile.rb using `chef install`
-I, [2020-02-05T07:29:02.050504 #18092]  INFO -- default-ubuntu-1804: Installing cookbooks from lock
-I, [2020-02-05T07:29:02.050755 #18092]  INFO -- default-ubuntu-1804: Using      apt                   7.2.0
-I, [2020-02-05T07:29:02.050961 #18092]  INFO -- default-ubuntu-1804: Installing mongod-replica-config 0.1.0
-I, [2020-02-05T07:29:02.073824 #18092]  INFO -- default-ubuntu-1804: Preparing dna.json
-I, [2020-02-05T07:29:02.076997 #18092]  INFO -- default-ubuntu-1804: Exporting cookbook dependencies from Policyfile C:/Users/KAJALP~1/AppData/Local/Temp/default-ubuntu-1804-sandbox-20200205-18092-d6qt9o...
-I, [2020-02-05T07:29:13.910387 #18092]  INFO -- default-ubuntu-1804: Exported policy 'mongod-replica-config' to C:/Users/KAJALP~1/AppData/Local/Temp/default-ubuntu-1804-sandbox-20200205-18092-d6qt9o
-I, [2020-02-05T07:29:13.910608 #18092]  INFO -- default-ubuntu-1804: 
-I, [2020-02-05T07:29:13.910772 #18092]  INFO -- default-ubuntu-1804: To converge this system with the exported policy, run:
-I, [2020-02-05T07:29:13.910924 #18092]  INFO -- default-ubuntu-1804:   cd C:/Users/KAJALP~1/AppData/Local/Temp/default-ubuntu-1804-sandbox-20200205-18092-d6qt9o
-I, [2020-02-05T07:29:13.911113 #18092]  INFO -- default-ubuntu-1804:   chef-client -z
-I, [2020-02-05T07:29:13.933670 #18092]  INFO -- default-ubuntu-1804: Removing non-cookbook files before transfer
-I, [2020-02-05T07:29:13.935455 #18092]  INFO -- default-ubuntu-1804: Preparing validation.pem
-I, [2020-02-05T07:29:13.937887 #18092]  INFO -- default-ubuntu-1804: Preparing client.rb
-I, [2020-02-05T07:29:13.986954 #18092]  INFO -- default-ubuntu-1804: -----> Installing Chef install only if missing package
-I, [2020-02-05T07:29:13.987657 #18092]  INFO -- default-ubuntu-1804: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
-I, [2020-02-05T07:29:13.988081 #18092]  INFO -- default-ubuntu-1804: Trying wget...
-I, [2020-02-05T07:29:14.062986 #18092]  INFO -- default-ubuntu-1804: Download complete.
-I, [2020-02-05T07:29:14.096189 #18092]  INFO -- default-ubuntu-1804: ubuntu 18.04 x86_64
-I, [2020-02-05T07:29:14.096785 #18092]  INFO -- default-ubuntu-1804: Getting information for chef stable  for ubuntu...
-I, [2020-02-05T07:29:14.097391 #18092]  INFO -- default-ubuntu-1804: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=18.04&m=x86_64
-I, [2020-02-05T07:29:14.097651 #18092]  INFO -- default-ubuntu-1804:   to file /tmp/install.sh.1576/metadata.txt
-I, [2020-02-05T07:29:14.098328 #18092]  INFO -- default-ubuntu-1804: trying wget...
-I, [2020-02-05T07:29:14.153732 #18092]  INFO -- default-ubuntu-1804: sha1	5cbde23fa9376cc16dd52a94d691b469f3522f09
-I, [2020-02-05T07:29:14.154834 #18092]  INFO -- default-ubuntu-1804: sha256	236c797dfa13554a8abfa1a4b69a13264f86f287faedc61ae485e947f13fcc13
-I, [2020-02-05T07:29:14.155585 #18092]  INFO -- default-ubuntu-1804: url	https://packages.chef.io/files/stable/chef/15.7.32/ubuntu/18.04/chef_15.7.32-1_amd64.deb
-I, [2020-02-05T07:29:14.155827 #18092]  INFO -- default-ubuntu-1804: version	15.7.32
-I, [2020-02-05T07:29:14.156511 #18092]  INFO -- default-ubuntu-1804: downloaded metadata file looks valid...
-I, [2020-02-05T07:29:14.179643 #18092]  INFO -- default-ubuntu-1804: /tmp/omnibus/cache/chef_15.7.32-1_amd64.deb exists
-I, [2020-02-05T07:29:14.180329 #18092]  INFO -- default-ubuntu-1804: Comparing checksum with sha256sum...
-I, [2020-02-05T07:29:15.012601 #18092]  INFO -- default-ubuntu-1804: 
-I, [2020-02-05T07:29:15.013034 #18092]  INFO -- default-ubuntu-1804: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-I, [2020-02-05T07:29:15.013201 #18092]  INFO -- default-ubuntu-1804: 
-I, [2020-02-05T07:29:15.013320 #18092]  INFO -- default-ubuntu-1804: You are installing a package without a version pin.  If you are installing
-I, [2020-02-05T07:29:15.013524 #18092]  INFO -- default-ubuntu-1804: on production servers via an automated process this is DANGEROUS and you will
-I, [2020-02-05T07:29:15.013743 #18092]  INFO -- default-ubuntu-1804: be upgraded without warning on new releases, even to new major releases.
-I, [2020-02-05T07:29:15.013957 #18092]  INFO -- default-ubuntu-1804: Letting the version float is only appropriate in desktop, test, development or
-I, [2020-02-05T07:29:15.014114 #18092]  INFO -- default-ubuntu-1804: CI/CD environments.
-I, [2020-02-05T07:29:15.014322 #18092]  INFO -- default-ubuntu-1804: 
-I, [2020-02-05T07:29:15.014607 #18092]  INFO -- default-ubuntu-1804: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-I, [2020-02-05T07:29:15.014816 #18092]  INFO -- default-ubuntu-1804: 
-I, [2020-02-05T07:29:15.015024 #18092]  INFO -- default-ubuntu-1804: Installing chef 
-I, [2020-02-05T07:29:15.015183 #18092]  INFO -- default-ubuntu-1804: installing with dpkg...
-I, [2020-02-05T07:29:15.121250 #18092]  INFO -- default-ubuntu-1804: Selecting previously unselected package chef.
-I, [2020-02-05T07:29:15.498480 #18092]  INFO -- default-ubuntu-1804: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 42631 files and directories currently installed.)
-I, [2020-02-05T07:29:15.499082 #18092]  INFO -- default-ubuntu-1804: Preparing to unpack .../cache/chef_15.7.32-1_amd64.deb ...
-I, [2020-02-05T07:29:15.521220 #18092]  INFO -- default-ubuntu-1804: Unpacking chef (15.7.32-1) ...
-I, [2020-02-05T07:29:31.410079 #18092]  INFO -- default-ubuntu-1804: Setting up chef (15.7.32-1) ...
-I, [2020-02-05T07:29:31.537836 #18092]  INFO -- default-ubuntu-1804: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
-I, [2020-02-05T07:29:31.616108 #18092]  INFO -- default-ubuntu-1804: Transferring files to <default-ubuntu-1804>
-I, [2020-02-05T07:29:38.560415 #18092]  INFO -- default-ubuntu-1804: +---------------------------------------------+
-I, [2020-02-05T07:29:38.560975 #18092]  INFO -- default-ubuntu-1804: [32m✔[0m 2 product licenses accepted.
-I, [2020-02-05T07:29:38.568999 #18092]  INFO -- default-ubuntu-1804: +---------------------------------------------+
-I, [2020-02-05T07:29:38.825815 #18092]  INFO -- default-ubuntu-1804: Starting Chef Infra Client, version 15.7.32
-I, [2020-02-05T07:29:40.995500 #18092]  INFO -- default-ubuntu-1804: Creating a new client identity for default-ubuntu-1804 using the validator key.
-I, [2020-02-05T07:29:41.222181 #18092]  INFO -- default-ubuntu-1804: Using policy 'mongod-replica-config' at revision 'fca558696e008ac4db80b934f947e8ab12c8b9973b5bce15fe5a41b6f7ce66b5'
-I, [2020-02-05T07:29:41.233767 #18092]  INFO -- default-ubuntu-1804: resolving cookbooks for run list: ["mongod-replica-config::default@0.1.0 (f5ebd0d)"]
-I, [2020-02-05T07:29:41.436625 #18092]  INFO -- default-ubuntu-1804: Synchronizing Cookbooks:
-I, [2020-02-05T07:29:41.543813 #18092]  INFO -- default-ubuntu-1804:   - apt (7.2.0)
-I, [2020-02-05T07:29:41.758902 #18092]  INFO -- default-ubuntu-1804:   - mongod-replica-config (0.1.0)
-I, [2020-02-05T07:29:41.759343 #18092]  INFO -- default-ubuntu-1804: Installing Cookbook Gems:
-I, [2020-02-05T07:29:41.791506 #18092]  INFO -- default-ubuntu-1804: Compiling Cookbooks...
-I, [2020-02-05T07:29:41.813285 #18092]  INFO -- default-ubuntu-1804: Converging 20 resources
-I, [2020-02-05T07:29:41.813849 #18092]  INFO -- default-ubuntu-1804: Recipe: apt::default
-I, [2020-02-05T07:29:41.814505 #18092]  INFO -- default-ubuntu-1804:   * file[/var/lib/apt/periodic/update-success-stamp] action nothing (skipped due to action :nothing)
-I, [2020-02-05T07:29:41.868335 #18092]  INFO -- default-ubuntu-1804:   * apt_update[periodic] action periodic
-I, [2020-02-05T07:29:41.869180 #18092]  INFO -- default-ubuntu-1804:     - update new lists of packages
-I, [2020-02-05T07:29:41.869942 #18092]  INFO -- default-ubuntu-1804:     * directory[/var/lib/apt/periodic] action create (up to date)
-I, [2020-02-05T07:29:41.870798 #18092]  INFO -- default-ubuntu-1804:     * directory[/etc/apt/apt.conf.d] action create (up to date)
-I, [2020-02-05T07:29:41.893896 #18092]  INFO -- default-ubuntu-1804:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
-I, [2020-02-05T07:29:56.948881 #18092]  INFO -- default-ubuntu-1804:     * execute[apt-get -q update] action run
-I, [2020-02-05T07:29:56.949410 #18092]  INFO -- default-ubuntu-1804:       - execute ["apt-get", "-q", "update"]
-I, [2020-02-05T07:29:56.949824 #18092]  INFO -- default-ubuntu-1804:   
-I, [2020-02-05T07:29:56.950314 #18092]  INFO -- default-ubuntu-1804:   * execute[apt-get update] action nothing (skipped due to action :nothing)
-I, [2020-02-05T07:29:56.950893 #18092]  INFO -- default-ubuntu-1804:   * execute[apt-get autoremove] action nothing (skipped due to action :nothing)
-I, [2020-02-05T07:29:56.951484 #18092]  INFO -- default-ubuntu-1804:   * execute[apt-get autoclean] action nothing (skipped due to action :nothing)
-I, [2020-02-05T07:29:57.058725 #18092]  INFO -- default-ubuntu-1804:   * directory[/var/cache/local] action create
-I, [2020-02-05T07:29:57.059331 #18092]  INFO -- default-ubuntu-1804:     - create new directory /var/cache/local
-I, [2020-02-05T07:29:57.059932 #18092]  INFO -- default-ubuntu-1804:     - change mode from '' to '0755'
-I, [2020-02-05T07:29:57.060515 #18092]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
-I, [2020-02-05T07:29:57.061028 #18092]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
-I, [2020-02-05T07:29:57.061671 #18092]  INFO -- default-ubuntu-1804:   * directory[/var/cache/local/preseeding] action create
-I, [2020-02-05T07:29:57.073314 #18092]  INFO -- default-ubuntu-1804:     - create new directory /var/cache/local/preseeding
-I, [2020-02-05T07:29:57.073889 #18092]  INFO -- default-ubuntu-1804:     - change mode from '' to '0755'
-I, [2020-02-05T07:29:57.074406 #18092]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
-I, [2020-02-05T07:29:57.074945 #18092]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
-I, [2020-02-05T07:29:57.086988 #18092]  INFO -- default-ubuntu-1804:   * template[/etc/apt/apt.conf.d/10dpkg-options] action create
-I, [2020-02-05T07:29:57.087374 #18092]  INFO -- default-ubuntu-1804:     - create new file /etc/apt/apt.conf.d/10dpkg-options
-I, [2020-02-05T07:29:57.087714 #18092]  INFO -- default-ubuntu-1804:     - update content in file /etc/apt/apt.conf.d/10dpkg-options from none to c918ac
-I, [2020-02-05T07:29:57.088256 #18092]  INFO -- default-ubuntu-1804:     --- /etc/apt/apt.conf.d/10dpkg-options	2020-02-05 07:29:55.311132799 +0000
-I, [2020-02-05T07:29:57.088815 #18092]  INFO -- default-ubuntu-1804:     +++ /etc/apt/apt.conf.d/.chef-10dpkg-options20200205-1660-1mpwpld	2020-02-05 07:29:55.311132799 +0000
-I, [2020-02-05T07:29:57.089232 #18092]  INFO -- default-ubuntu-1804:     @@ -1 +1,4 @@
-I, [2020-02-05T07:29:57.089612 #18092]  INFO -- default-ubuntu-1804:     +# Managed by Chef
-I, [2020-02-05T07:29:57.089990 #18092]  INFO -- default-ubuntu-1804:     +DPkg::Options {
-I, [2020-02-05T07:29:57.090430 #18092]  INFO -- default-ubuntu-1804:     +}
-I, [2020-02-05T07:29:57.090837 #18092]  INFO -- default-ubuntu-1804:     - change mode from '' to '0644'
-I, [2020-02-05T07:29:57.091200 #18092]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
-I, [2020-02-05T07:29:57.091608 #18092]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
-I, [2020-02-05T07:29:57.102583 #18092]  INFO -- default-ubuntu-1804:   * template[/etc/apt/apt.conf.d/10recommends] action create
-I, [2020-02-05T07:29:57.103002 #18092]  INFO -- default-ubuntu-1804:     - create new file /etc/apt/apt.conf.d/10recommends
-I, [2020-02-05T07:29:57.103728 #18092]  INFO -- default-ubuntu-1804:     - update content in file /etc/apt/apt.conf.d/10recommends from none to f41e1d
-I, [2020-02-05T07:29:57.104263 #18092]  INFO -- default-ubuntu-1804:     --- /etc/apt/apt.conf.d/10recommends	2020-02-05 07:29:55.331142798 +0000
-I, [2020-02-05T07:29:57.104752 #18092]  INFO -- default-ubuntu-1804:     +++ /etc/apt/apt.conf.d/.chef-10recommends20200205-1660-1smx3ws	2020-02-05 07:29:55.331142798 +0000
-I, [2020-02-05T07:29:57.104999 #18092]  INFO -- default-ubuntu-1804:     @@ -1 +1,4 @@
-I, [2020-02-05T07:29:57.105442 #18092]  INFO -- default-ubuntu-1804:     +# Managed by Chef
-I, [2020-02-05T07:29:57.105847 #18092]  INFO -- default-ubuntu-1804:     +APT::Install-Recommends "1";
-I, [2020-02-05T07:29:57.117458 #18092]  INFO -- default-ubuntu-1804:     +APT::Install-Suggests "0";
-I, [2020-02-05T07:29:57.117971 #18092]  INFO -- default-ubuntu-1804:     - change mode from '' to '0644'
-I, [2020-02-05T07:29:57.118361 #18092]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
-I, [2020-02-05T07:29:57.118771 #18092]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
-I, [2020-02-05T07:30:04.628076 #18092]  INFO -- default-ubuntu-1804:   * apt_package[apt-transport-https, gnupg, dirmngr] action install
-I, [2020-02-05T07:30:04.628622 #18092]  INFO -- default-ubuntu-1804:     - install version 1.6.12 of package apt-transport-https
-I, [2020-02-05T07:30:04.629073 #18092]  INFO -- default-ubuntu-1804: Recipe: mongod-replica-config::default
-I, [2020-02-05T07:31:41.867905 #18092]  INFO -- default-ubuntu-1804:   * bash[install_mongod] action run
-I, [2020-02-05T07:31:41.868223 #18092]  INFO -- default-ubuntu-1804:     - execute "bash"  "/tmp/chef-script20200205-1660-8bahlg"
-I, [2020-02-05T07:31:42.062229 #18092]  INFO -- default-ubuntu-1804:   * execute[restart_mongod] action run
-I, [2020-02-05T07:31:42.062644 #18092]  INFO -- default-ubuntu-1804:     - execute sudo systemctl restart mongod
-I, [2020-02-05T07:31:42.448630 #18092]  INFO -- default-ubuntu-1804:   * execute[restart_mongod.service] action run
-I, [2020-02-05T07:31:42.448883 #18092]  INFO -- default-ubuntu-1804:     - execute sudo systemctl enable mongod.service
-I, [2020-02-05T07:31:42.535387 #18092]  INFO -- default-ubuntu-1804:   * template[/etc/mongod.conf] action create
-I, [2020-02-05T07:31:42.535999 #18092]  INFO -- default-ubuntu-1804:     - update content in file /etc/mongod.conf from 956fef to c96e79
-I, [2020-02-05T07:31:42.536768 #18092]  INFO -- default-ubuntu-1804:     --- /etc/mongod.conf	2018-05-08 21:54:31.000000000 +0000
-I, [2020-02-05T07:31:42.537505 #18092]  INFO -- default-ubuntu-1804:     +++ /etc/.chef-mongod20200205-1660-1pn9qlz.conf	2020-02-05 07:31:40.755828534 +0000
-I, [2020-02-05T07:31:42.538058 #18092]  INFO -- default-ubuntu-1804:     @@ -1,8 +1,12 @@
-I, [2020-02-05T07:31:42.538509 #18092]  INFO -- default-ubuntu-1804:      # mongod.conf
-I, [2020-02-05T07:31:42.538905 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.539328 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.539762 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.540359 #18092]  INFO -- default-ubuntu-1804:      # for documentation of all options, see:
-I, [2020-02-05T07:31:42.540918 #18092]  INFO -- default-ubuntu-1804:      #   http://docs.mongodb.org/manual/reference/configuration-options/
-I, [2020-02-05T07:31:42.541458 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.541933 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.542340 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.543088 #18092]  INFO -- default-ubuntu-1804:      # Where and how to store data.
-I, [2020-02-05T07:31:42.543710 #18092]  INFO -- default-ubuntu-1804:      storage:
-I, [2020-02-05T07:31:42.544175 #18092]  INFO -- default-ubuntu-1804: dbPath: /var/lib/mongodb
-I, [2020-02-05T07:31:42.544713 #18092]  INFO -- default-ubuntu-1804:     @@ -12,31 +16,51 @@
-I, [2020-02-05T07:31:42.544979 #18092]  INFO -- default-ubuntu-1804:      #  mmapv1:
-I, [2020-02-05T07:31:42.545140 #18092]  INFO -- default-ubuntu-1804:      #  wiredTiger:
-I, [2020-02-05T07:31:42.545274 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.545565 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.545738 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.546011 #18092]  INFO -- default-ubuntu-1804:      # where to write logging data.
-I, [2020-02-05T07:31:42.546276 #18092]  INFO -- default-ubuntu-1804:      systemLog:
-I, [2020-02-05T07:31:42.546541 #18092]  INFO -- default-ubuntu-1804: destination: file
-I, [2020-02-05T07:31:42.546708 #18092]  INFO -- default-ubuntu-1804: logAppend: true
-I, [2020-02-05T07:31:42.547204 #18092]  INFO -- default-ubuntu-1804: path: /var/log/mongodb/mongod.log
-I, [2020-02-05T07:31:42.547368 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.547656 #18092]  INFO -- default-ubuntu-1804:     -# network interfaces
-I, [2020-02-05T07:31:42.547796 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.547895 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.547987 #18092]  INFO -- default-ubuntu-1804:     +#network interfaces
-I, [2020-02-05T07:31:42.548317 #18092]  INFO -- default-ubuntu-1804:      net:
-I, [2020-02-05T07:31:42.548448 #18092]  INFO -- default-ubuntu-1804: port: 27017
-I, [2020-02-05T07:31:42.548660 #18092]  INFO -- default-ubuntu-1804:     -  bindIp: 127.0.0.1
-I, [2020-02-05T07:31:42.548893 #18092]  INFO -- default-ubuntu-1804:     +  bindIp: 0.0.0.0
-I, [2020-02-05T07:31:42.549071 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.549281 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.549469 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.549661 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.549892 #18092]  INFO -- default-ubuntu-1804:      #processManagement:
-I, [2020-02-05T07:31:42.550293 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.550450 #18092]  INFO -- default-ubuntu-1804:     -#security:
-I, [2020-02-05T07:31:42.550610 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.550684 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.550998 #18092]  INFO -- default-ubuntu-1804:     +security:
-I, [2020-02-05T07:31:42.551317 #18092]  INFO -- default-ubuntu-1804:     +  keyFile: /opt/mongo/mongo-keyfile
-I, [2020-02-05T07:31:42.551593 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.551737 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.551882 #18092]  INFO -- default-ubuntu-1804:      #operationProfiling:
-I, [2020-02-05T07:31:42.552029 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.552178 #18092]  INFO -- default-ubuntu-1804:     -#replication:
-I, [2020-02-05T07:31:42.552324 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.552444 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.552823 #18092]  INFO -- default-ubuntu-1804:     +replication:
-I, [2020-02-05T07:31:42.553061 #18092]  INFO -- default-ubuntu-1804:     +  replSetName: rs0
-I, [2020-02-05T07:31:42.553192 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.553313 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.553573 #18092]  INFO -- default-ubuntu-1804:      #sharding:
-I, [2020-02-05T07:31:42.564777 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.565201 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.565519 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.565864 #18092]  INFO -- default-ubuntu-1804:      ## Enterprise-Only Options:
-I, [2020-02-05T07:31:42.566287 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.566626 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.566966 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.567245 #18092]  INFO -- default-ubuntu-1804:      #auditLog:
-I, [2020-02-05T07:31:42.567429 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.567616 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.567798 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.568280 #18092]  INFO -- default-ubuntu-1804:      #snmp:
-I, [2020-02-05T07:31:42.622175 #18092]  INFO -- default-ubuntu-1804:   * execute[restart_mongod] action run
-I, [2020-02-05T07:31:42.622458 #18092]  INFO -- default-ubuntu-1804:     - execute sudo systemctl restart mongod
-I, [2020-02-05T07:31:42.654963 #18092]  INFO -- default-ubuntu-1804:   * template[/lib/systemd/system/mongod.service] action create
-I, [2020-02-05T07:31:42.655620 #18092]  INFO -- default-ubuntu-1804:     - update content in file /lib/systemd/system/mongod.service from 0bb32f to 1f07a7
-I, [2020-02-05T07:31:42.656061 #18092]  INFO -- default-ubuntu-1804:     --- /lib/systemd/system/mongod.service	2018-04-25 22:02:35.000000000 +0000
-I, [2020-02-05T07:31:42.656560 #18092]  INFO -- default-ubuntu-1804:     +++ /lib/systemd/system/.chef-mongod20200205-1660-174g6xw.service	2020-02-05 07:31:40.919910534 +0000
-I, [2020-02-05T07:31:42.667810 #18092]  INFO -- default-ubuntu-1804:     @@ -3,28 +3,14 @@
-I, [2020-02-05T07:31:42.668475 #18092]  INFO -- default-ubuntu-1804:      After=network.target
-I, [2020-02-05T07:31:42.668973 #18092]  INFO -- default-ubuntu-1804:      Documentation=https://docs.mongodb.org/manual
-I, [2020-02-05T07:31:42.669549 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.670037 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.670457 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.670985 #18092]  INFO -- default-ubuntu-1804:      [Service]
-I, [2020-02-05T07:31:42.671373 #18092]  INFO -- default-ubuntu-1804:      User=mongodb
-I, [2020-02-05T07:31:42.671589 #18092]  INFO -- default-ubuntu-1804:      Group=mongodb
-I, [2020-02-05T07:31:42.672030 #18092]  INFO -- default-ubuntu-1804:      ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
-I, [2020-02-05T07:31:42.672346 #18092]  INFO -- default-ubuntu-1804:     -# file size
-I, [2020-02-05T07:31:42.672798 #18092]  INFO -- default-ubuntu-1804:     -LimitFSIZE=infinity
-I, [2020-02-05T07:31:42.673269 #18092]  INFO -- default-ubuntu-1804:     -# cpu time
-I, [2020-02-05T07:31:42.673652 #18092]  INFO -- default-ubuntu-1804:     -LimitCPU=infinity
-I, [2020-02-05T07:31:42.674130 #18092]  INFO -- default-ubuntu-1804:     -# virtual memory size
-I, [2020-02-05T07:31:42.674566 #18092]  INFO -- default-ubuntu-1804:     -LimitAS=infinity
-I, [2020-02-05T07:31:42.674966 #18092]  INFO -- default-ubuntu-1804:     -# open files
-I, [2020-02-05T07:31:42.675522 #18092]  INFO -- default-ubuntu-1804:     -LimitNOFILE=64000
-I, [2020-02-05T07:31:42.676064 #18092]  INFO -- default-ubuntu-1804:     -# processes/threads
-I, [2020-02-05T07:31:42.676417 #18092]  INFO -- default-ubuntu-1804:     -LimitNPROC=64000
-I, [2020-02-05T07:31:42.676619 #18092]  INFO -- default-ubuntu-1804:     -# locked memory
-I, [2020-02-05T07:31:42.677042 #18092]  INFO -- default-ubuntu-1804:     -LimitMEMLOCK=infinity
-I, [2020-02-05T07:31:42.677185 #18092]  INFO -- default-ubuntu-1804:     -# total threads (user+kernel)
-I, [2020-02-05T07:31:42.677359 #18092]  INFO -- default-ubuntu-1804:     -TasksMax=infinity
-I, [2020-02-05T07:31:42.677565 #18092]  INFO -- default-ubuntu-1804:     -TasksAccounting=false
-I, [2020-02-05T07:31:42.677769 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.677973 #18092]  INFO -- default-ubuntu-1804:     -# Recommended limits for for mongod as specified in
-I, [2020-02-05T07:31:42.678151 #18092]  INFO -- default-ubuntu-1804:     -# http://docs.mongodb.org/manual/reference/ulimit/#recommended-settings
-I, [2020-02-05T07:31:42.678712 #18092]  INFO -- default-ubuntu-1804:     +
-I, [2020-02-05T07:31:42.678906 #18092]  INFO -- default-ubuntu-1804:      
-I, [2020-02-05T07:31:42.679361 #18092]  INFO -- default-ubuntu-1804:      [Install]
-I, [2020-02-05T07:31:42.679798 #18092]  INFO -- default-ubuntu-1804:      WantedBy=multi-user.target
-I, [2020-02-05T07:31:42.957313 #18092]  INFO -- default-ubuntu-1804:   * execute[restart_mongod.service] action run
-I, [2020-02-05T07:31:42.957543 #18092]  INFO -- default-ubuntu-1804:     - execute sudo systemctl enable mongod.service
-I, [2020-02-05T07:31:42.957893 #18092]  INFO -- default-ubuntu-1804:   * directory[/opt/mongo] action create
-I, [2020-02-05T07:31:42.958303 #18092]  INFO -- default-ubuntu-1804:     - create new directory /opt/mongo
-I, [2020-02-05T07:31:42.958723 #18092]  INFO -- default-ubuntu-1804:     - change mode from '' to '0755'
-I, [2020-02-05T07:31:42.959227 #18092]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
-I, [2020-02-05T07:31:42.959786 #18092]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
-I, [2020-02-05T07:31:43.023524 #18092]  INFO -- default-ubuntu-1804:   * template[/opt/mongo/mongo-keyfile] action create
-I, [2020-02-05T07:31:43.024532 #18092]  INFO -- default-ubuntu-1804:     - create new file /opt/mongo/mongo-keyfile
-I, [2020-02-05T07:31:43.025454 #18092]  INFO -- default-ubuntu-1804:     - update content in file /opt/mongo/mongo-keyfile from none to da9066
-I, [2020-02-05T07:31:43.026905 #18092]  INFO -- default-ubuntu-1804:     --- /opt/mongo/mongo-keyfile	2020-02-05 07:31:41.300100538 +0000
-I, [2020-02-05T07:31:43.028257 #18092]  INFO -- default-ubuntu-1804:     +++ /opt/mongo/.chef-mongo-keyfile20200205-1660-1e6vnuy	2020-02-05 07:31:41.300100538 +0000
-I, [2020-02-05T07:31:43.029103 #18092]  INFO -- default-ubuntu-1804:     @@ -1 +1,17 @@
-I, [2020-02-05T07:31:43.029567 #18092]  INFO -- default-ubuntu-1804:     +pn69PbCyWf6GBiC2v51sbXuj6P9Y0tJba7+WcanDEl5ZtENEHIZDdJxTuSAkQ2We
-I, [2020-02-05T07:31:43.030567 #18092]  INFO -- default-ubuntu-1804:     +TG0SMUa0pgZZMlo5KbykLIdLWqna9xAr9A8irTYGEDynBFrKz124RqAU60WjeAVA
-I, [2020-02-05T07:31:43.031513 #18092]  INFO -- default-ubuntu-1804:     +qpVhqY8vaOiVxZ2tg5+3dp58KaVdhG5hrhoy+YoYij1scWBPWMnhuSn5N6jjbJSk
-I, [2020-02-05T07:31:43.031865 #18092]  INFO -- default-ubuntu-1804:     +rBJkxP4eUJgir2rCu1wpnsTYTUe2+Vdip3MI+y5qLpM5e2a6qA1fE+Vk5A1viaGS
-I, [2020-02-05T07:31:43.032741 #18092]  INFO -- default-ubuntu-1804:     +BJr1ZWY87OnUH1NjxkkCRs7O01R6Q5GLMgr64eWfNUzxvJ1JjkMnX3FrI4DoKhty
-I, [2020-02-05T07:31:43.033493 #18092]  INFO -- default-ubuntu-1804:     +cIeSwIVp6t5S3WL1KiEJTgQ6mCAf0S2gxmNXtAlucKEiuu77W6yPVh0sLpY0qRU8
-I, [2020-02-05T07:31:43.033791 #18092]  INFO -- default-ubuntu-1804:     +5bAdBOFqCopaOHOV8sAbc71ghf69lOdRiuHNCFjVTSa5Lj2VLuIDpU4itk2fyp6/
-I, [2020-02-05T07:31:43.034686 #18092]  INFO -- default-ubuntu-1804:     +XxfrrmmXzCVkmPBU1OHkdD8a6c8VJ/W3r63ZSM0zVZuIyTHpvMRJNIni5Ye4CmLG
-I, [2020-02-05T07:31:43.035305 #18092]  INFO -- default-ubuntu-1804:     +PRTXE9EB+Bv4vLNehinvgkcbGkMCU/IdxUxHRGvUhJprJtu4LVsZsEUujrKOONOf
-I, [2020-02-05T07:31:43.036182 #18092]  INFO -- default-ubuntu-1804:     +2Uj79Ofr8Yf1yn6r8vY1Ba/K4UQ4y3ZwAaBMKOLaeJX7y9sVYxQ2rr+pUpMDF06x
-I, [2020-02-05T07:31:43.037185 #18092]  INFO -- default-ubuntu-1804:     +YXIpCpzJ33lhzP+iJNQzUH0gWMrwk8UpSwa9PA7NM4FBwHULPaidQy/UEdV8od1/
-I, [2020-02-05T07:31:43.038079 #18092]  INFO -- default-ubuntu-1804:     +p6m7Kl74fNX63sw3g81r2e5Ireu+Ogvs8LV5b8p7lU/1ePCryw+jxwPmmQoKW5jR
-I, [2020-02-05T07:31:43.038986 #18092]  INFO -- default-ubuntu-1804:     +Q+Bv1Kx5P0pi/s/siYC7ttIqtJu0BF4bVTr4aTUOaCk2z1qQ6LUEwyYQkemaDi7H
-I, [2020-02-05T07:31:43.039357 #18092]  INFO -- default-ubuntu-1804:     +K0y26m722FvgRyChUw1+JfFDEhV2j+qXU1hhqgbcBiOU5hfadqd1/4NqJi2vVtOM
-I, [2020-02-05T07:31:43.040226 #18092]  INFO -- default-ubuntu-1804:     +MeZgFjc/VXRtkplpoVYTceq4a1VZDsJq73xWfeDaDNbvnVL5mCXtAuLBndAgUvVd
-I, [2020-02-05T07:31:43.041129 #18092]  INFO -- default-ubuntu-1804:     +aQtDEb5OVh2BrXr7o/IVn6vxSG9Nvnv7JwV1i+d4L7CcrUN+
-I, [2020-02-05T07:31:43.042416 #18092]  INFO -- default-ubuntu-1804:     - change mode from '' to '0400'
-I, [2020-02-05T07:31:43.398480 #18092]  INFO -- default-ubuntu-1804:   * execute[restart_mongod.service] action run
-I, [2020-02-05T07:31:43.399056 #18092]  INFO -- default-ubuntu-1804:     - execute sudo systemctl enable mongod.service
-I, [2020-02-05T07:31:43.442669 #18092]  INFO -- default-ubuntu-1804:   * bash[chown keyfile] action run
-I, [2020-02-05T07:31:43.443509 #18092]  INFO -- default-ubuntu-1804:     - execute "bash"  "/tmp/chef-script20200205-1660-ln8cot"
-I, [2020-02-05T07:31:43.743723 #18092]  INFO -- default-ubuntu-1804:   * execute[restart_mongod.service] action run
-I, [2020-02-05T07:31:43.744304 #18092]  INFO -- default-ubuntu-1804:     - execute sudo systemctl enable mongod.service
-I, [2020-02-05T07:31:43.776056 #18092]  INFO -- default-ubuntu-1804:   * execute[restart_mongod] action run
-I, [2020-02-05T07:31:43.776289 #18092]  INFO -- default-ubuntu-1804:     - execute sudo systemctl restart mongod
-I, [2020-02-05T07:31:43.957430 #18092]  INFO -- default-ubuntu-1804: 
-I, [2020-02-05T07:31:43.957927 #18092]  INFO -- default-ubuntu-1804: Running handlers:
-I, [2020-02-05T07:31:43.958516 #18092]  INFO -- default-ubuntu-1804: Running handlers complete
-I, [2020-02-05T07:31:43.959003 #18092]  INFO -- default-ubuntu-1804: Chef Infra Client finished, 20/27 resources updated in 02 minutes 05 seconds
-I, [2020-02-05T07:31:43.980820 #18092]  INFO -- default-ubuntu-1804: Downloading files from <default-ubuntu-1804>
-I, [2020-02-05T07:31:44.111427 #18092]  INFO -- default-ubuntu-1804: Finished converging <default-ubuntu-1804> (2m53.22s).
-I, [2020-02-05T07:31:44.111873 #18092]  INFO -- default-ubuntu-1804: -----> Setting up <default-ubuntu-1804>...
-I, [2020-02-05T07:31:44.114504 #18092]  INFO -- default-ubuntu-1804: Finished setting up <default-ubuntu-1804> (0m0.00s).
-I, [2020-02-05T07:31:44.114917 #18092]  INFO -- default-ubuntu-1804: -----> Verifying <default-ubuntu-1804>...
-I, [2020-02-05T07:31:45.853760 #18092]  INFO -- default-ubuntu-1804: Loaded tests from {:path=>"C:.opscode.cookbooks.Final_Project.devops-final-db-base-ami.test.integration.default"} 
-I, [2020-02-05T07:31:47.466576 #18092]  INFO -- default-ubuntu-1804: Finished verifying <default-ubuntu-1804> (0m3.35s).
-I, [2020-02-05T07:31:47.469568 #18092]  INFO -- default-ubuntu-1804: -----> Destroying <default-ubuntu-1804>...
-I, [2020-02-05T07:31:55.690167 #18092]  INFO -- default-ubuntu-1804: ==> default: Forcing shutdown of VM...
-I, [2020-02-05T07:31:57.499337 #18092]  INFO -- default-ubuntu-1804: ==> default: Destroying VM and associated drives...
-I, [2020-02-05T07:31:58.044935 #18092]  INFO -- default-ubuntu-1804: ==> default: [vagrant-hostsupdater] Removing hosts
-I, [2020-02-05T07:31:58.166290 #18092]  INFO -- default-ubuntu-1804: Vagrant instance <default-ubuntu-1804> destroyed.
-I, [2020-02-05T07:31:58.169850 #18092]  INFO -- default-ubuntu-1804: Finished destroying <default-ubuntu-1804> (0m10.69s).
-I, [2020-02-05T07:31:58.171651 #18092]  INFO -- default-ubuntu-1804: Finished testing <default-ubuntu-1804> (4m29.61s).
+I, [2020-02-05T09:52:51.440951 #13512]  INFO -- default-ubuntu-1804: -----> Cleaning up any prior instances of <default-ubuntu-1804>
+I, [2020-02-05T09:52:51.441467 #13512]  INFO -- default-ubuntu-1804: -----> Destroying <default-ubuntu-1804>...
+I, [2020-02-05T09:52:51.442987 #13512]  INFO -- default-ubuntu-1804: Finished destroying <default-ubuntu-1804> (0m0.00s).
+I, [2020-02-05T09:52:51.443970 #13512]  INFO -- default-ubuntu-1804: -----> Testing <default-ubuntu-1804>
+I, [2020-02-05T09:52:51.444240 #13512]  INFO -- default-ubuntu-1804: -----> Creating <default-ubuntu-1804>...
+I, [2020-02-05T09:52:56.614131 #13512]  INFO -- default-ubuntu-1804: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2020-02-05T09:53:00.794308 #13512]  INFO -- default-ubuntu-1804: ==> default: Importing base box 'bento/ubuntu-18.04'...
+I, [2020-02-05T09:53:11.444092 #13512]  INFO -- default-ubuntu-1804: [KProgress: 40%[KProgress: 50%[K==> default: Matching MAC address for NAT networking...
+I, [2020-02-05T09:53:11.849486 #13512]  INFO -- default-ubuntu-1804: ==> default: Checking if box 'bento/ubuntu-18.04' version '201912.14.0' is up to date...
+I, [2020-02-05T09:53:12.482939 #13512]  INFO -- default-ubuntu-1804: ==> default: A newer version of the box 'bento/ubuntu-18.04' for provider 'virtualbox' is
+I, [2020-02-05T09:53:12.483169 #13512]  INFO -- default-ubuntu-1804: ==> default: available! You currently have version '201912.14.0'. The latest is version
+I, [2020-02-05T09:53:12.483286 #13512]  INFO -- default-ubuntu-1804: ==> default: '202002.04.0'. Run `vagrant box update` to update.
+I, [2020-02-05T09:53:13.393465 #13512]  INFO -- default-ubuntu-1804: ==> default: Setting the name of the VM: kitchen-devops-final-db-base-ami-default-ubuntu-1804-2dbfd670-dc00-497c-b1b3-49305882cbe5
+I, [2020-02-05T09:53:16.772457 #13512]  INFO -- default-ubuntu-1804: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2020-02-05T09:53:17.385312 #13512]  INFO -- default-ubuntu-1804: ==> default: Clearing any previously set network interfaces...
+I, [2020-02-05T09:53:17.492703 #13512]  INFO -- default-ubuntu-1804: ==> default: Preparing network interfaces based on configuration...
+I, [2020-02-05T09:53:17.492849 #13512]  INFO -- default-ubuntu-1804:     default: Adapter 1: nat
+I, [2020-02-05T09:53:17.601061 #13512]  INFO -- default-ubuntu-1804: ==> default: Forwarding ports...
+I, [2020-02-05T09:53:17.721048 #13512]  INFO -- default-ubuntu-1804:     default: 22 (guest) => 2200 (host) (adapter 1)
+I, [2020-02-05T09:53:17.982660 #13512]  INFO -- default-ubuntu-1804: ==> default: Running 'pre-boot' VM customizations...
+I, [2020-02-05T09:53:18.068495 #13512]  INFO -- default-ubuntu-1804: ==> default: Booting VM...
+I, [2020-02-05T09:53:21.673958 #13512]  INFO -- default-ubuntu-1804: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2020-02-05T09:53:23.540976 #13512]  INFO -- default-ubuntu-1804:     default: SSH address: 127.0.0.1:2200
+I, [2020-02-05T09:53:23.541125 #13512]  INFO -- default-ubuntu-1804:     default: SSH username: vagrant
+I, [2020-02-05T09:53:23.541219 #13512]  INFO -- default-ubuntu-1804:     default: SSH auth method: private key
+I, [2020-02-05T09:53:41.988368 #13512]  INFO -- default-ubuntu-1804:     default: 
+I, [2020-02-05T09:53:41.988505 #13512]  INFO -- default-ubuntu-1804:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2020-02-05T09:53:41.988591 #13512]  INFO -- default-ubuntu-1804:     default: this with a newly generated keypair for better security.
+I, [2020-02-05T09:53:43.839351 #13512]  INFO -- default-ubuntu-1804:     default: 
+I, [2020-02-05T09:53:43.839493 #13512]  INFO -- default-ubuntu-1804:     default: Inserting generated public key within guest...
+I, [2020-02-05T09:53:45.198074 #13512]  INFO -- default-ubuntu-1804:     default: Removing insecure key from the guest if it's present...
+I, [2020-02-05T09:53:45.549934 #13512]  INFO -- default-ubuntu-1804:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2020-02-05T09:53:46.707832 #13512]  INFO -- default-ubuntu-1804: ==> default: Machine booted and ready!
+I, [2020-02-05T09:53:46.708067 #13512]  INFO -- default-ubuntu-1804: ==> default: Checking for guest additions in VM...
+I, [2020-02-05T09:53:46.793090 #13512]  INFO -- default-ubuntu-1804:     default: The guest additions on this VM do not match the installed version of
+I, [2020-02-05T09:53:46.793310 #13512]  INFO -- default-ubuntu-1804:     default: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2020-02-05T09:53:46.793480 #13512]  INFO -- default-ubuntu-1804:     default: prevent things such as shared folders from working properly. If you see
+I, [2020-02-05T09:53:46.793624 #13512]  INFO -- default-ubuntu-1804:     default: shared folder errors, please make sure the guest additions within the
+I, [2020-02-05T09:53:46.793850 #13512]  INFO -- default-ubuntu-1804:     default: virtual machine match the version of VirtualBox you have installed on
+I, [2020-02-05T09:53:46.794009 #13512]  INFO -- default-ubuntu-1804:     default: your host and reload your VM.
+I, [2020-02-05T09:53:46.794162 #13512]  INFO -- default-ubuntu-1804:     default: 
+I, [2020-02-05T09:53:46.794317 #13512]  INFO -- default-ubuntu-1804:     default: Guest Additions Version: 6.1.0
+I, [2020-02-05T09:53:46.794475 #13512]  INFO -- default-ubuntu-1804:     default: VirtualBox Version: 6.0
+I, [2020-02-05T09:53:46.794637 #13512]  INFO -- default-ubuntu-1804: ==> default: [vagrant-hostsupdater] Checking for host entries
+I, [2020-02-05T09:53:46.794790 #13512]  INFO -- default-ubuntu-1804: ==> default: Setting hostname...
+I, [2020-02-05T09:53:47.642584 #13512]  INFO -- default-ubuntu-1804: ==> default: Mounting shared folders...
+I, [2020-02-05T09:53:47.642752 #13512]  INFO -- default-ubuntu-1804:     default: /tmp/omnibus/cache => C:/Users/Shireen Yawer/.kitchen/cache
+I, [2020-02-05T09:53:48.318989 #13512]  INFO -- default-ubuntu-1804: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2020-02-05T09:53:56.922357 #13512]  INFO -- default-ubuntu-1804: [SSH] Established
+I, [2020-02-05T09:53:56.923208 #13512]  INFO -- default-ubuntu-1804: Vagrant instance <default-ubuntu-1804> created.
+I, [2020-02-05T09:53:56.927220 #13512]  INFO -- default-ubuntu-1804: Finished creating <default-ubuntu-1804> (1m5.52s).
+I, [2020-02-05T09:53:56.927588 #13512]  INFO -- default-ubuntu-1804: -----> Converging <default-ubuntu-1804>...
+I, [2020-02-05T09:53:56.938113 #13512]  INFO -- default-ubuntu-1804: Preparing files for transfer
+I, [2020-02-05T09:53:56.938822 #13512]  INFO -- default-ubuntu-1804: Installing cookbooks for Policyfile C:/opscode/cookbooks/devops-final-db-base-ami/Policyfile.rb using `chef install`
+I, [2020-02-05T09:54:06.778882 #13512]  INFO -- default-ubuntu-1804: Installing cookbooks from lock
+I, [2020-02-05T09:54:06.779062 #13512]  INFO -- default-ubuntu-1804: Using      apt                   7.2.0
+I, [2020-02-05T09:54:06.779186 #13512]  INFO -- default-ubuntu-1804: Installing mongod-replica-config 0.1.0
+I, [2020-02-05T09:54:06.801800 #13512]  INFO -- default-ubuntu-1804: Preparing dna.json
+I, [2020-02-05T09:54:06.804102 #13512]  INFO -- default-ubuntu-1804: Exporting cookbook dependencies from Policyfile C:/Users/SHIREE~1/AppData/Local/Temp/default-ubuntu-1804-sandbox-20200205-13512-1mjcd2c...
+I, [2020-02-05T09:54:18.549110 #13512]  INFO -- default-ubuntu-1804: Exported policy 'mongod-replica-config' to C:/Users/SHIREE~1/AppData/Local/Temp/default-ubuntu-1804-sandbox-20200205-13512-1mjcd2c
+I, [2020-02-05T09:54:18.549291 #13512]  INFO -- default-ubuntu-1804: 
+I, [2020-02-05T09:54:18.549490 #13512]  INFO -- default-ubuntu-1804: To converge this system with the exported policy, run:
+I, [2020-02-05T09:54:18.549615 #13512]  INFO -- default-ubuntu-1804:   cd C:/Users/SHIREE~1/AppData/Local/Temp/default-ubuntu-1804-sandbox-20200205-13512-1mjcd2c
+I, [2020-02-05T09:54:18.549737 #13512]  INFO -- default-ubuntu-1804:   chef-client -z
+I, [2020-02-05T09:54:18.571807 #13512]  INFO -- default-ubuntu-1804: Removing non-cookbook files before transfer
+I, [2020-02-05T09:54:18.574072 #13512]  INFO -- default-ubuntu-1804: Preparing validation.pem
+I, [2020-02-05T09:54:18.577052 #13512]  INFO -- default-ubuntu-1804: Preparing client.rb
+I, [2020-02-05T09:54:18.613611 #13512]  INFO -- default-ubuntu-1804: -----> Installing Chef install only if missing package
+I, [2020-02-05T09:54:18.613979 #13512]  INFO -- default-ubuntu-1804: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2020-02-05T09:54:18.614241 #13512]  INFO -- default-ubuntu-1804: Trying wget...
+I, [2020-02-05T09:54:18.668191 #13512]  INFO -- default-ubuntu-1804: Download complete.
+I, [2020-02-05T09:54:18.689664 #13512]  INFO -- default-ubuntu-1804: ubuntu 18.04 x86_64
+I, [2020-02-05T09:54:18.689871 #13512]  INFO -- default-ubuntu-1804: Getting information for chef stable  for ubuntu...
+I, [2020-02-05T09:54:18.689972 #13512]  INFO -- default-ubuntu-1804: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=18.04&m=x86_64
+I, [2020-02-05T09:54:18.690103 #13512]  INFO -- default-ubuntu-1804:   to file /tmp/install.sh.1651/metadata.txt
+I, [2020-02-05T09:54:18.690510 #13512]  INFO -- default-ubuntu-1804: trying wget...
+I, [2020-02-05T09:54:18.723808 #13512]  INFO -- default-ubuntu-1804: sha1	5cbde23fa9376cc16dd52a94d691b469f3522f09
+I, [2020-02-05T09:54:18.724401 #13512]  INFO -- default-ubuntu-1804: sha256	236c797dfa13554a8abfa1a4b69a13264f86f287faedc61ae485e947f13fcc13
+I, [2020-02-05T09:54:18.724937 #13512]  INFO -- default-ubuntu-1804: url	https://packages.chef.io/files/stable/chef/15.7.32/ubuntu/18.04/chef_15.7.32-1_amd64.deb
+I, [2020-02-05T09:54:18.725545 #13512]  INFO -- default-ubuntu-1804: version	15.7.32
+I, [2020-02-05T09:54:18.725973 #13512]  INFO -- default-ubuntu-1804: downloaded metadata file looks valid...
+I, [2020-02-05T09:54:18.738756 #13512]  INFO -- default-ubuntu-1804: /tmp/omnibus/cache/chef_15.7.32-1_amd64.deb exists
+I, [2020-02-05T09:54:18.739375 #13512]  INFO -- default-ubuntu-1804: Comparing checksum with sha256sum...
+I, [2020-02-05T09:54:19.039481 #13512]  INFO -- default-ubuntu-1804: 
+I, [2020-02-05T09:54:19.039744 #13512]  INFO -- default-ubuntu-1804: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2020-02-05T09:54:19.039852 #13512]  INFO -- default-ubuntu-1804: 
+I, [2020-02-05T09:54:19.039956 #13512]  INFO -- default-ubuntu-1804: You are installing a package without a version pin.  If you are installing
+I, [2020-02-05T09:54:19.040061 #13512]  INFO -- default-ubuntu-1804: on production servers via an automated process this is DANGEROUS and you will
+I, [2020-02-05T09:54:19.040134 #13512]  INFO -- default-ubuntu-1804: be upgraded without warning on new releases, even to new major releases.
+I, [2020-02-05T09:54:19.040204 #13512]  INFO -- default-ubuntu-1804: Letting the version float is only appropriate in desktop, test, development or
+I, [2020-02-05T09:54:19.040282 #13512]  INFO -- default-ubuntu-1804: CI/CD environments.
+I, [2020-02-05T09:54:19.040384 #13512]  INFO -- default-ubuntu-1804: 
+I, [2020-02-05T09:54:19.040487 #13512]  INFO -- default-ubuntu-1804: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2020-02-05T09:54:19.040588 #13512]  INFO -- default-ubuntu-1804: 
+I, [2020-02-05T09:54:19.040689 #13512]  INFO -- default-ubuntu-1804: Installing chef 
+I, [2020-02-05T09:54:19.041267 #13512]  INFO -- default-ubuntu-1804: installing with dpkg...
+I, [2020-02-05T09:54:19.105870 #13512]  INFO -- default-ubuntu-1804: Selecting previously unselected package chef.
+I, [2020-02-05T09:54:19.310052 #13512]  INFO -- default-ubuntu-1804: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 42631 files and directories currently installed.)
+I, [2020-02-05T09:54:19.310559 #13512]  INFO -- default-ubuntu-1804: Preparing to unpack .../cache/chef_15.7.32-1_amd64.deb ...
+I, [2020-02-05T09:54:19.321284 #13512]  INFO -- default-ubuntu-1804: Unpacking chef (15.7.32-1) ...
+I, [2020-02-05T09:54:27.074958 #13512]  INFO -- default-ubuntu-1804: Setting up chef (15.7.32-1) ...
+I, [2020-02-05T09:54:27.192879 #13512]  INFO -- default-ubuntu-1804: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+I, [2020-02-05T09:54:27.261664 #13512]  INFO -- default-ubuntu-1804: Transferring files to <default-ubuntu-1804>
+I, [2020-02-05T09:54:32.958043 #13512]  INFO -- default-ubuntu-1804: +---------------------------------------------+
+I, [2020-02-05T09:54:32.958340 #13512]  INFO -- default-ubuntu-1804: [32m✔[0m 2 product licenses accepted.
+I, [2020-02-05T09:54:32.958596 #13512]  INFO -- default-ubuntu-1804: +---------------------------------------------+
+I, [2020-02-05T09:54:33.204721 #13512]  INFO -- default-ubuntu-1804: Starting Chef Infra Client, version 15.7.32
+I, [2020-02-05T09:54:34.669509 #13512]  INFO -- default-ubuntu-1804: Creating a new client identity for default-ubuntu-1804 using the validator key.
+I, [2020-02-05T09:54:34.756379 #13512]  INFO -- default-ubuntu-1804: Using policy 'mongod-replica-config' at revision '0408c1bc6b17891cef42d877cc0999917a42fa9aa71771fdd6d7b04ad794adce'
+I, [2020-02-05T09:54:34.790641 #13512]  INFO -- default-ubuntu-1804: resolving cookbooks for run list: ["mongod-replica-config::default@0.1.0 (1768098)"]
+I, [2020-02-05T09:54:35.071345 #13512]  INFO -- default-ubuntu-1804: Synchronizing Cookbooks:
+I, [2020-02-05T09:54:35.262438 #13512]  INFO -- default-ubuntu-1804:   - apt (7.2.0)
+I, [2020-02-05T09:54:35.524415 #13512]  INFO -- default-ubuntu-1804:   - mongod-replica-config (0.1.0)
+I, [2020-02-05T09:54:35.524777 #13512]  INFO -- default-ubuntu-1804: Installing Cookbook Gems:
+I, [2020-02-05T09:54:35.557688 #13512]  INFO -- default-ubuntu-1804: Compiling Cookbooks...
+I, [2020-02-05T09:54:35.579115 #13512]  INFO -- default-ubuntu-1804: Converging 20 resources
+I, [2020-02-05T09:54:35.579498 #13512]  INFO -- default-ubuntu-1804: Recipe: apt::default
+I, [2020-02-05T09:54:35.580107 #13512]  INFO -- default-ubuntu-1804:   * file[/var/lib/apt/periodic/update-success-stamp] action nothing (skipped due to action :nothing)
+I, [2020-02-05T09:54:35.591738 #13512]  INFO -- default-ubuntu-1804:   * apt_update[periodic] action periodic
+I, [2020-02-05T09:54:35.592161 #13512]  INFO -- default-ubuntu-1804:     - update new lists of packages
+I, [2020-02-05T09:54:35.592557 #13512]  INFO -- default-ubuntu-1804:     * directory[/var/lib/apt/periodic] action create (up to date)
+I, [2020-02-05T09:54:35.603362 #13512]  INFO -- default-ubuntu-1804:     * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2020-02-05T09:54:35.614204 #13512]  INFO -- default-ubuntu-1804:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
+I, [2020-02-05T09:54:45.567717 #13512]  INFO -- default-ubuntu-1804:     * execute[apt-get -q update] action run
+I, [2020-02-05T09:54:45.568012 #13512]  INFO -- default-ubuntu-1804:       - execute ["apt-get", "-q", "update"]
+I, [2020-02-05T09:54:45.568250 #13512]  INFO -- default-ubuntu-1804:   
+I, [2020-02-05T09:54:45.568685 #13512]  INFO -- default-ubuntu-1804:   * execute[apt-get update] action nothing (skipped due to action :nothing)
+I, [2020-02-05T09:54:45.569169 #13512]  INFO -- default-ubuntu-1804:   * execute[apt-get autoremove] action nothing (skipped due to action :nothing)
+I, [2020-02-05T09:54:45.569994 #13512]  INFO -- default-ubuntu-1804:   * execute[apt-get autoclean] action nothing (skipped due to action :nothing)
+I, [2020-02-05T09:54:45.570584 #13512]  INFO -- default-ubuntu-1804:   * directory[/var/cache/local] action create
+I, [2020-02-05T09:54:45.581462 #13512]  INFO -- default-ubuntu-1804:     - create new directory /var/cache/local
+I, [2020-02-05T09:54:45.581856 #13512]  INFO -- default-ubuntu-1804:     - change mode from '' to '0755'
+I, [2020-02-05T09:54:45.582230 #13512]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
+I, [2020-02-05T09:54:45.582472 #13512]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
+I, [2020-02-05T09:54:45.582705 #13512]  INFO -- default-ubuntu-1804:   * directory[/var/cache/local/preseeding] action create
+I, [2020-02-05T09:54:45.593886 #13512]  INFO -- default-ubuntu-1804:     - create new directory /var/cache/local/preseeding
+I, [2020-02-05T09:54:45.594232 #13512]  INFO -- default-ubuntu-1804:     - change mode from '' to '0755'
+I, [2020-02-05T09:54:45.594529 #13512]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
+I, [2020-02-05T09:54:45.594761 #13512]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
+I, [2020-02-05T09:54:45.616409 #13512]  INFO -- default-ubuntu-1804:   * template[/etc/apt/apt.conf.d/10dpkg-options] action create
+I, [2020-02-05T09:54:45.616801 #13512]  INFO -- default-ubuntu-1804:     - create new file /etc/apt/apt.conf.d/10dpkg-options
+I, [2020-02-05T09:54:45.617153 #13512]  INFO -- default-ubuntu-1804:     - update content in file /etc/apt/apt.conf.d/10dpkg-options from none to c918ac
+I, [2020-02-05T09:54:45.617712 #13512]  INFO -- default-ubuntu-1804:     --- /etc/apt/apt.conf.d/10dpkg-options	2020-02-05 09:54:44.282631972 +0000
+I, [2020-02-05T09:54:45.618013 #13512]  INFO -- default-ubuntu-1804:     +++ /etc/apt/apt.conf.d/.chef-10dpkg-options20200205-1735-fpqpx6	2020-02-05 09:54:44.282631972 +0000
+I, [2020-02-05T09:54:45.618407 #13512]  INFO -- default-ubuntu-1804:     @@ -1 +1,4 @@
+I, [2020-02-05T09:54:45.618849 #13512]  INFO -- default-ubuntu-1804:     +# Managed by Chef
+I, [2020-02-05T09:54:45.619212 #13512]  INFO -- default-ubuntu-1804:     +DPkg::Options {
+I, [2020-02-05T09:54:45.629957 #13512]  INFO -- default-ubuntu-1804:     +}
+I, [2020-02-05T09:54:45.630388 #13512]  INFO -- default-ubuntu-1804:     - change mode from '' to '0644'
+I, [2020-02-05T09:54:45.630734 #13512]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
+I, [2020-02-05T09:54:45.631065 #13512]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
+I, [2020-02-05T09:54:45.641706 #13512]  INFO -- default-ubuntu-1804:   * template[/etc/apt/apt.conf.d/10recommends] action create
+I, [2020-02-05T09:54:45.642268 #13512]  INFO -- default-ubuntu-1804:     - create new file /etc/apt/apt.conf.d/10recommends
+I, [2020-02-05T09:54:45.643577 #13512]  INFO -- default-ubuntu-1804:     - update content in file /etc/apt/apt.conf.d/10recommends from none to f41e1d
+I, [2020-02-05T09:54:45.644149 #13512]  INFO -- default-ubuntu-1804:     --- /etc/apt/apt.conf.d/10recommends	2020-02-05 09:54:44.306643972 +0000
+I, [2020-02-05T09:54:45.644547 #13512]  INFO -- default-ubuntu-1804:     +++ /etc/apt/apt.conf.d/.chef-10recommends20200205-1735-v33fsi	2020-02-05 09:54:44.306643972 +0000
+I, [2020-02-05T09:54:45.644996 #13512]  INFO -- default-ubuntu-1804:     @@ -1 +1,4 @@
+I, [2020-02-05T09:54:45.645329 #13512]  INFO -- default-ubuntu-1804:     +# Managed by Chef
+I, [2020-02-05T09:54:45.645562 #13512]  INFO -- default-ubuntu-1804:     +APT::Install-Recommends "1";
+I, [2020-02-05T09:54:45.645872 #13512]  INFO -- default-ubuntu-1804:     +APT::Install-Suggests "0";
+I, [2020-02-05T09:54:45.646155 #13512]  INFO -- default-ubuntu-1804:     - change mode from '' to '0644'
+I, [2020-02-05T09:54:45.646417 #13512]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
+I, [2020-02-05T09:54:45.646709 #13512]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
+I, [2020-02-05T09:54:52.462928 #13512]  INFO -- default-ubuntu-1804:   * apt_package[apt-transport-https, gnupg, dirmngr] action install
+I, [2020-02-05T09:54:52.463449 #13512]  INFO -- default-ubuntu-1804:     - install version 1.6.12 of package apt-transport-https
+I, [2020-02-05T09:54:52.463768 #13512]  INFO -- default-ubuntu-1804: Recipe: mongod-replica-config::default
+I, [2020-02-05T09:55:59.102194 #13512]  INFO -- default-ubuntu-1804:   * bash[install_mongod] action run
+I, [2020-02-05T09:55:59.102351 #13512]  INFO -- default-ubuntu-1804:     - execute "bash"  "/tmp/chef-script20200205-1735-1647dzj"
+I, [2020-02-05T09:55:59.145206 #13512]  INFO -- default-ubuntu-1804:   * execute[restart_mongod] action run
+I, [2020-02-05T09:55:59.145390 #13512]  INFO -- default-ubuntu-1804:     - execute sudo systemctl restart mongod
+I, [2020-02-05T09:55:59.435528 #13512]  INFO -- default-ubuntu-1804:   * execute[restart_mongod.service] action run
+I, [2020-02-05T09:55:59.435691 #13512]  INFO -- default-ubuntu-1804:     - execute sudo systemctl enable mongod.service
+I, [2020-02-05T09:55:59.457017 #13512]  INFO -- default-ubuntu-1804:   * template[/etc/mongod.conf] action create
+I, [2020-02-05T09:55:59.457418 #13512]  INFO -- default-ubuntu-1804:     - update content in file /etc/mongod.conf from 956fef to c96e79
+I, [2020-02-05T09:55:59.458723 #13512]  INFO -- default-ubuntu-1804:     --- /etc/mongod.conf	2018-05-08 21:54:31.000000000 +0000
+I, [2020-02-05T09:55:59.459137 #13512]  INFO -- default-ubuntu-1804:     +++ /etc/.chef-mongod20200205-1735-1df6wb3.conf	2020-02-05 09:55:58.251595293 +0000
+I, [2020-02-05T09:55:59.459625 #13512]  INFO -- default-ubuntu-1804:     @@ -1,8 +1,12 @@
+I, [2020-02-05T09:55:59.460160 #13512]  INFO -- default-ubuntu-1804:      # mongod.conf
+I, [2020-02-05T09:55:59.460431 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.460790 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.461302 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.461883 #13512]  INFO -- default-ubuntu-1804:      # for documentation of all options, see:
+I, [2020-02-05T09:55:59.462421 #13512]  INFO -- default-ubuntu-1804:      #   http://docs.mongodb.org/manual/reference/configuration-options/
+I, [2020-02-05T09:55:59.462826 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.463155 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.463465 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.463775 #13512]  INFO -- default-ubuntu-1804:      # Where and how to store data.
+I, [2020-02-05T09:55:59.464085 #13512]  INFO -- default-ubuntu-1804:      storage:
+I, [2020-02-05T09:55:59.464398 #13512]  INFO -- default-ubuntu-1804: dbPath: /var/lib/mongodb
+I, [2020-02-05T09:55:59.464752 #13512]  INFO -- default-ubuntu-1804:     @@ -12,31 +16,51 @@
+I, [2020-02-05T09:55:59.465061 #13512]  INFO -- default-ubuntu-1804:      #  mmapv1:
+I, [2020-02-05T09:55:59.465429 #13512]  INFO -- default-ubuntu-1804:      #  wiredTiger:
+I, [2020-02-05T09:55:59.465869 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.466122 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.466394 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.466635 #13512]  INFO -- default-ubuntu-1804:      # where to write logging data.
+I, [2020-02-05T09:55:59.466850 #13512]  INFO -- default-ubuntu-1804:      systemLog:
+I, [2020-02-05T09:55:59.467071 #13512]  INFO -- default-ubuntu-1804: destination: file
+I, [2020-02-05T09:55:59.467381 #13512]  INFO -- default-ubuntu-1804: logAppend: true
+I, [2020-02-05T09:55:59.471668 #13512]  INFO -- default-ubuntu-1804: path: /var/log/mongodb/mongod.log
+I, [2020-02-05T09:55:59.472013 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.472226 #13512]  INFO -- default-ubuntu-1804:     -# network interfaces
+I, [2020-02-05T09:55:59.472406 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.472637 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.472711 #13512]  INFO -- default-ubuntu-1804:     +#network interfaces
+I, [2020-02-05T09:55:59.472952 #13512]  INFO -- default-ubuntu-1804:      net:
+I, [2020-02-05T09:55:59.473261 #13512]  INFO -- default-ubuntu-1804: port: 27017
+I, [2020-02-05T09:55:59.473508 #13512]  INFO -- default-ubuntu-1804:     -  bindIp: 127.0.0.1
+I, [2020-02-05T09:55:59.473608 #13512]  INFO -- default-ubuntu-1804:     +  bindIp: 0.0.0.0
+I, [2020-02-05T09:55:59.473734 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.474081 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.474174 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.474728 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.475351 #13512]  INFO -- default-ubuntu-1804:      #processManagement:
+I, [2020-02-05T09:55:59.475674 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.475969 #13512]  INFO -- default-ubuntu-1804:     -#security:
+I, [2020-02-05T09:55:59.476108 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.476806 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.477354 #13512]  INFO -- default-ubuntu-1804:     +security:
+I, [2020-02-05T09:55:59.477470 #13512]  INFO -- default-ubuntu-1804:     +  keyFile: /opt/mongo/mongo-keyfile
+I, [2020-02-05T09:55:59.477576 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.477685 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.477820 #13512]  INFO -- default-ubuntu-1804:      #operationProfiling:
+I, [2020-02-05T09:55:59.477947 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.478075 #13512]  INFO -- default-ubuntu-1804:     -#replication:
+I, [2020-02-05T09:55:59.478214 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.478316 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.478444 #13512]  INFO -- default-ubuntu-1804:     +replication:
+I, [2020-02-05T09:55:59.479081 #13512]  INFO -- default-ubuntu-1804:     +  replSetName: rs0
+I, [2020-02-05T09:55:59.479200 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.479301 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.479418 #13512]  INFO -- default-ubuntu-1804:      #sharding:
+I, [2020-02-05T09:55:59.479525 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.479945 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.480109 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.480208 #13512]  INFO -- default-ubuntu-1804:      ## Enterprise-Only Options:
+I, [2020-02-05T09:55:59.480337 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.480457 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.480805 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.480938 #13512]  INFO -- default-ubuntu-1804:      #auditLog:
+I, [2020-02-05T09:55:59.481016 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.481085 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.481212 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.481680 #13512]  INFO -- default-ubuntu-1804:      #snmp:
+I, [2020-02-05T09:55:59.737716 #13512]  INFO -- default-ubuntu-1804:   * execute[restart_mongod] action run
+I, [2020-02-05T09:55:59.737898 #13512]  INFO -- default-ubuntu-1804:     - execute sudo systemctl restart mongod
+I, [2020-02-05T09:55:59.770832 #13512]  INFO -- default-ubuntu-1804:   * template[/lib/systemd/system/mongod.service] action create
+I, [2020-02-05T09:55:59.771259 #13512]  INFO -- default-ubuntu-1804:     - update content in file /lib/systemd/system/mongod.service from 0bb32f to 1f07a7
+I, [2020-02-05T09:55:59.782881 #13512]  INFO -- default-ubuntu-1804:     --- /lib/systemd/system/mongod.service	2018-04-25 22:02:35.000000000 +0000
+I, [2020-02-05T09:55:59.783281 #13512]  INFO -- default-ubuntu-1804:     +++ /lib/systemd/system/.chef-mongod20200205-1735-1jzfly3.service	2020-02-05 09:55:58.571755282 +0000
+I, [2020-02-05T09:55:59.783642 #13512]  INFO -- default-ubuntu-1804:     @@ -3,28 +3,14 @@
+I, [2020-02-05T09:55:59.783995 #13512]  INFO -- default-ubuntu-1804:      After=network.target
+I, [2020-02-05T09:55:59.784333 #13512]  INFO -- default-ubuntu-1804:      Documentation=https://docs.mongodb.org/manual
+I, [2020-02-05T09:55:59.784665 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.785255 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.785688 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.786047 #13512]  INFO -- default-ubuntu-1804:      [Service]
+I, [2020-02-05T09:55:59.786403 #13512]  INFO -- default-ubuntu-1804:      User=mongodb
+I, [2020-02-05T09:55:59.786718 #13512]  INFO -- default-ubuntu-1804:      Group=mongodb
+I, [2020-02-05T09:55:59.786921 #13512]  INFO -- default-ubuntu-1804:      ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
+I, [2020-02-05T09:55:59.787013 #13512]  INFO -- default-ubuntu-1804:     -# file size
+I, [2020-02-05T09:55:59.787105 #13512]  INFO -- default-ubuntu-1804:     -LimitFSIZE=infinity
+I, [2020-02-05T09:55:59.787208 #13512]  INFO -- default-ubuntu-1804:     -# cpu time
+I, [2020-02-05T09:55:59.787296 #13512]  INFO -- default-ubuntu-1804:     -LimitCPU=infinity
+I, [2020-02-05T09:55:59.787741 #13512]  INFO -- default-ubuntu-1804:     -# virtual memory size
+I, [2020-02-05T09:55:59.787835 #13512]  INFO -- default-ubuntu-1804:     -LimitAS=infinity
+I, [2020-02-05T09:55:59.788098 #13512]  INFO -- default-ubuntu-1804:     -# open files
+I, [2020-02-05T09:55:59.788317 #13512]  INFO -- default-ubuntu-1804:     -LimitNOFILE=64000
+I, [2020-02-05T09:55:59.788432 #13512]  INFO -- default-ubuntu-1804:     -# processes/threads
+I, [2020-02-05T09:55:59.788712 #13512]  INFO -- default-ubuntu-1804:     -LimitNPROC=64000
+I, [2020-02-05T09:55:59.788806 #13512]  INFO -- default-ubuntu-1804:     -# locked memory
+I, [2020-02-05T09:55:59.789068 #13512]  INFO -- default-ubuntu-1804:     -LimitMEMLOCK=infinity
+I, [2020-02-05T09:55:59.789385 #13512]  INFO -- default-ubuntu-1804:     -# total threads (user+kernel)
+I, [2020-02-05T09:55:59.789481 #13512]  INFO -- default-ubuntu-1804:     -TasksMax=infinity
+I, [2020-02-05T09:55:59.789571 #13512]  INFO -- default-ubuntu-1804:     -TasksAccounting=false
+I, [2020-02-05T09:55:59.789664 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.789942 #13512]  INFO -- default-ubuntu-1804:     -# Recommended limits for for mongod as specified in
+I, [2020-02-05T09:55:59.790340 #13512]  INFO -- default-ubuntu-1804:     -# http://docs.mongodb.org/manual/reference/ulimit/#recommended-settings
+I, [2020-02-05T09:55:59.790500 #13512]  INFO -- default-ubuntu-1804:     +
+I, [2020-02-05T09:55:59.791064 #13512]  INFO -- default-ubuntu-1804:      
+I, [2020-02-05T09:55:59.791263 #13512]  INFO -- default-ubuntu-1804:      [Install]
+I, [2020-02-05T09:55:59.791392 #13512]  INFO -- default-ubuntu-1804:      WantedBy=multi-user.target
+I, [2020-02-05T09:56:00.005845 #13512]  INFO -- default-ubuntu-1804:   * execute[restart_mongod.service] action run
+I, [2020-02-05T09:56:00.005992 #13512]  INFO -- default-ubuntu-1804:     - execute sudo systemctl enable mongod.service
+I, [2020-02-05T09:56:00.006964 #13512]  INFO -- default-ubuntu-1804:   * directory[/opt/mongo] action create
+I, [2020-02-05T09:56:00.018381 #13512]  INFO -- default-ubuntu-1804:     - create new directory /opt/mongo
+I, [2020-02-05T09:56:00.018896 #13512]  INFO -- default-ubuntu-1804:     - change mode from '' to '0755'
+I, [2020-02-05T09:56:00.019258 #13512]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
+I, [2020-02-05T09:56:00.019590 #13512]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
+I, [2020-02-05T09:56:00.041917 #13512]  INFO -- default-ubuntu-1804:   * template[/opt/mongo/mongo-keyfile] action create
+I, [2020-02-05T09:56:00.042431 #13512]  INFO -- default-ubuntu-1804:     - create new file /opt/mongo/mongo-keyfile
+I, [2020-02-05T09:56:00.042786 #13512]  INFO -- default-ubuntu-1804:     - update content in file /opt/mongo/mongo-keyfile from none to da9066
+I, [2020-02-05T09:56:00.043291 #13512]  INFO -- default-ubuntu-1804:     --- /opt/mongo/mongo-keyfile	2020-02-05 09:55:58.843891272 +0000
+I, [2020-02-05T09:56:00.043777 #13512]  INFO -- default-ubuntu-1804:     +++ /opt/mongo/.chef-mongo-keyfile20200205-1735-n8ld8f	2020-02-05 09:55:58.843891272 +0000
+I, [2020-02-05T09:56:00.044081 #13512]  INFO -- default-ubuntu-1804:     @@ -1 +1,17 @@
+I, [2020-02-05T09:56:00.044449 #13512]  INFO -- default-ubuntu-1804:     +pn69PbCyWf6GBiC2v51sbXuj6P9Y0tJba7+WcanDEl5ZtENEHIZDdJxTuSAkQ2We
+I, [2020-02-05T09:56:00.044702 #13512]  INFO -- default-ubuntu-1804:     +TG0SMUa0pgZZMlo5KbykLIdLWqna9xAr9A8irTYGEDynBFrKz124RqAU60WjeAVA
+I, [2020-02-05T09:56:00.045263 #13512]  INFO -- default-ubuntu-1804:     +qpVhqY8vaOiVxZ2tg5+3dp58KaVdhG5hrhoy+YoYij1scWBPWMnhuSn5N6jjbJSk
+I, [2020-02-05T09:56:00.045701 #13512]  INFO -- default-ubuntu-1804:     +rBJkxP4eUJgir2rCu1wpnsTYTUe2+Vdip3MI+y5qLpM5e2a6qA1fE+Vk5A1viaGS
+I, [2020-02-05T09:56:00.046059 #13512]  INFO -- default-ubuntu-1804:     +BJr1ZWY87OnUH1NjxkkCRs7O01R6Q5GLMgr64eWfNUzxvJ1JjkMnX3FrI4DoKhty
+I, [2020-02-05T09:56:00.046342 #13512]  INFO -- default-ubuntu-1804:     +cIeSwIVp6t5S3WL1KiEJTgQ6mCAf0S2gxmNXtAlucKEiuu77W6yPVh0sLpY0qRU8
+I, [2020-02-05T09:56:00.046535 #13512]  INFO -- default-ubuntu-1804:     +5bAdBOFqCopaOHOV8sAbc71ghf69lOdRiuHNCFjVTSa5Lj2VLuIDpU4itk2fyp6/
+I, [2020-02-05T09:56:00.047038 #13512]  INFO -- default-ubuntu-1804:     +XxfrrmmXzCVkmPBU1OHkdD8a6c8VJ/W3r63ZSM0zVZuIyTHpvMRJNIni5Ye4CmLG
+I, [2020-02-05T09:56:00.047152 #13512]  INFO -- default-ubuntu-1804:     +PRTXE9EB+Bv4vLNehinvgkcbGkMCU/IdxUxHRGvUhJprJtu4LVsZsEUujrKOONOf
+I, [2020-02-05T09:56:00.047354 #13512]  INFO -- default-ubuntu-1804:     +2Uj79Ofr8Yf1yn6r8vY1Ba/K4UQ4y3ZwAaBMKOLaeJX7y9sVYxQ2rr+pUpMDF06x
+I, [2020-02-05T09:56:00.047450 #13512]  INFO -- default-ubuntu-1804:     +YXIpCpzJ33lhzP+iJNQzUH0gWMrwk8UpSwa9PA7NM4FBwHULPaidQy/UEdV8od1/
+I, [2020-02-05T09:56:00.047527 #13512]  INFO -- default-ubuntu-1804:     +p6m7Kl74fNX63sw3g81r2e5Ireu+Ogvs8LV5b8p7lU/1ePCryw+jxwPmmQoKW5jR
+I, [2020-02-05T09:56:00.047883 #13512]  INFO -- default-ubuntu-1804:     +Q+Bv1Kx5P0pi/s/siYC7ttIqtJu0BF4bVTr4aTUOaCk2z1qQ6LUEwyYQkemaDi7H
+I, [2020-02-05T09:56:00.047957 #13512]  INFO -- default-ubuntu-1804:     +K0y26m722FvgRyChUw1+JfFDEhV2j+qXU1hhqgbcBiOU5hfadqd1/4NqJi2vVtOM
+I, [2020-02-05T09:56:00.048205 #13512]  INFO -- default-ubuntu-1804:     +MeZgFjc/VXRtkplpoVYTceq4a1VZDsJq73xWfeDaDNbvnVL5mCXtAuLBndAgUvVd
+I, [2020-02-05T09:56:00.048276 #13512]  INFO -- default-ubuntu-1804:     +aQtDEb5OVh2BrXr7o/IVn6vxSG9Nvnv7JwV1i+d4L7CcrUN+
+I, [2020-02-05T09:56:00.048566 #13512]  INFO -- default-ubuntu-1804:     - change mode from '' to '0400'
+I, [2020-02-05T09:56:00.273802 #13512]  INFO -- default-ubuntu-1804:   * execute[restart_mongod.service] action run
+I, [2020-02-05T09:56:00.274196 #13512]  INFO -- default-ubuntu-1804:     - execute sudo systemctl enable mongod.service
+I, [2020-02-05T09:56:00.306957 #13512]  INFO -- default-ubuntu-1804:   * bash[chown keyfile] action run
+I, [2020-02-05T09:56:00.317721 #13512]  INFO -- default-ubuntu-1804:     - execute "bash"  "/tmp/chef-script20200205-1735-1sdpbp7"
+I, [2020-02-05T09:56:00.522400 #13512]  INFO -- default-ubuntu-1804:   * execute[restart_mongod.service] action run
+I, [2020-02-05T09:56:00.522597 #13512]  INFO -- default-ubuntu-1804:     - execute sudo systemctl enable mongod.service
+I, [2020-02-05T09:56:00.566252 #13512]  INFO -- default-ubuntu-1804:   * execute[restart_mongod] action run
+I, [2020-02-05T09:56:00.566413 #13512]  INFO -- default-ubuntu-1804:     - execute sudo systemctl restart mongod
+I, [2020-02-05T09:56:00.727235 #13512]  INFO -- default-ubuntu-1804: 
+I, [2020-02-05T09:56:00.738978 #13512]  INFO -- default-ubuntu-1804: Running handlers:
+I, [2020-02-05T09:56:00.739307 #13512]  INFO -- default-ubuntu-1804: Running handlers complete
+I, [2020-02-05T09:56:00.739507 #13512]  INFO -- default-ubuntu-1804: Chef Infra Client finished, 20/27 resources updated in 01 minutes 27 seconds
+I, [2020-02-05T09:56:00.751108 #13512]  INFO -- default-ubuntu-1804: Downloading files from <default-ubuntu-1804>
+I, [2020-02-05T09:56:00.963381 #13512]  INFO -- default-ubuntu-1804: Finished converging <default-ubuntu-1804> (2m4.20s).
+I, [2020-02-05T09:56:00.964018 #13512]  INFO -- default-ubuntu-1804: -----> Setting up <default-ubuntu-1804>...
+I, [2020-02-05T09:56:00.967591 #13512]  INFO -- default-ubuntu-1804: Finished setting up <default-ubuntu-1804> (0m0.00s).
+I, [2020-02-05T09:56:00.968084 #13512]  INFO -- default-ubuntu-1804: -----> Verifying <default-ubuntu-1804>...
+I, [2020-02-05T09:56:03.035675 #13512]  INFO -- default-ubuntu-1804: Loaded tests from {:path=>"C:.opscode.cookbooks.devops-final-db-base-ami.test.integration.default"} 
+I, [2020-02-05T09:56:04.172226 #13512]  INFO -- default-ubuntu-1804: Finished verifying <default-ubuntu-1804> (0m3.21s).
+I, [2020-02-05T09:56:04.173724 #13512]  INFO -- default-ubuntu-1804: -----> Destroying <default-ubuntu-1804>...
+I, [2020-02-05T09:56:16.248798 #13512]  INFO -- default-ubuntu-1804: ==> default: Forcing shutdown of VM...
+I, [2020-02-05T09:56:17.533411 #13512]  INFO -- default-ubuntu-1804: ==> default: Destroying VM and associated drives...
+I, [2020-02-05T09:56:17.942777 #13512]  INFO -- default-ubuntu-1804: ==> default: [vagrant-hostsupdater] Removing hosts
+I, [2020-02-05T09:56:18.014708 #13512]  INFO -- default-ubuntu-1804: Vagrant instance <default-ubuntu-1804> destroyed.
+I, [2020-02-05T09:56:18.015964 #13512]  INFO -- default-ubuntu-1804: Finished destroying <default-ubuntu-1804> (0m13.86s).
+I, [2020-02-05T09:56:18.016793 #13512]  INFO -- default-ubuntu-1804: Finished testing <default-ubuntu-1804> (3m26.81s).
