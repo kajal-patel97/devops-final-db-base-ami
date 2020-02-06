@@ -30,6 +30,13 @@
 }],
 
   "provisioners":[
+
+    {
+      "type": "inspec",
+      "profile": "https://github.com/dev-sec/linux-baseline",
+      "inspec_env_vars": [ "CHEF_LICENSE=accept"]
+    }
+    
     {
       "type": "chef-solo",
       "config_template": "/home/jenkins/client.rb",
