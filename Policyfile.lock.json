@@ -1,5 +1,5 @@
 {
-  "revision_id": "fca558696e008ac4db80b934f947e8ab12c8b9973b5bce15fe5a41b6f7ce66b5",
+  "revision_id": "445c18548c7f4712d0bce249985ed62bcba0bd1a626d70e07291f2984e75ddc7",
   "name": "mongod-replica-config",
   "run_list": [
     "recipe[mongod-replica-config::default]"
@@ -21,14 +21,14 @@
     },
     "mongod-replica-config": {
       "version": "0.1.0",
-      "identifier": "f5ebd0d23797c7d8e7eede505194b2a3b6a5c573",
-      "dotted_decimal_identifier": "69220651406694343.61053608087540116.196416213730675",
+      "identifier": "65888abeaa303a676c54ae47da834e61caac9d5b",
+      "dotted_decimal_identifier": "28579102133465146.29111033558194819.86181919104347",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "763dfc5cc392b18478068a8cdcc42f8b36000193",
+        "revision": "49bea93d993e199383b2a1ec3367ad6d1405a892",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
