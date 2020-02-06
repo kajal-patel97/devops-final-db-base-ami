@@ -33,13 +33,13 @@
     {
       "type": "chef-solo",
       "cookbook_paths": ["./berks-cookbooks/"],
-       "execute_command": "{{if .Sudo}}sudo {{end}}chef-solo --chef-license accept-silent -c {{.ConfigPath}} -j /tmp/node.json",
+       "chef_license":  "accept",
        "run_list": ["mongod-replica-config::default"]
     },
       {
       "type": "chef-solo",
       "cookbook_paths": ["./berks-cookbooks/filebeat/berks-cookbooks/"],
-       "execute_command": "{{if .Sudo}}sudo {{end}}chef-solo --chef-license accept-silent -c {{.ConfigPath}} -j /tmp/node.json",
+       "chef_license": "accept", 
        "run_list": ["filebeat::default"]
     }
 
