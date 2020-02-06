@@ -32,14 +32,16 @@
   "provisioners":[
     {
       "type": "chef-solo",
+      "config_template": "/home/ubuntu/client.rb",
       "cookbook_paths": ["./berks-cookbooks/"],
        "chef_license":  "accept",
        "run_list": ["mongod-replica-config::default"]
     },
       {
       "type": "chef-solo",
+      "config_template": "/home/ubuntu/client.rb",
       "cookbook_paths": ["./berks-cookbooks/filebeat/berks-cookbooks/"],
-       "chef_license": "accept", 
+       "chef_license": "accept",
        "run_list": ["filebeat::default"]
     }
 

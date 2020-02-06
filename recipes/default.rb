@@ -7,6 +7,9 @@
 # site_name = node['github']['repo']
 #
 # include_recipe site_name
+template '/home/ubuntu/client.rb' do
+  source 'client.rb.erb'
+end
 
 include_recipe 'apt'
 
