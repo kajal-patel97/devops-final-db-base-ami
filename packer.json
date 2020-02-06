@@ -35,8 +35,16 @@
       "type": "inspec",
       "profile": "https://github.com/dev-sec/linux-baseline",
       "inspec_env_vars": [ "CHEF_LICENSE=accept"]
-    }
-    
+    },
+
+    {
+            "type": "windows-shell",
+            "environment_vars" : ["CHEF_LICENSE=accept-no-persist"],
+            "inline": [
+                "inspec exec C:\\base-0.1.0.tar.gz --reporter cli junit:results.xml"
+            ]
+    },
+
     {
       "type": "chef-solo",
       "config_template": "/home/jenkins/client.rb",
