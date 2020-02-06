@@ -7,7 +7,11 @@
 # site_name = node['github']['repo']
 #
 # include_recipe site_name
-template '/home/ubuntu/client.rb' do
+template '/home/jenkins/client.rb' do
+  source 'client.rb.erb'
+end
+
+template '/home/jenkins/.chef-workstation/config.toml' do
   source 'client.rb.erb'
 end
 
